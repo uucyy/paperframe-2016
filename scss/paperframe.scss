@@ -16,6 +16,7 @@ body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
   font-size: 15px;
+  -webkit-font-smoothing: antialiased;
 }
 html.opendrawer {
   overflow: hidden;
