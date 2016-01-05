@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html id="body">
+
+<head>
+  <title>PaperFrame</title>
+  <link rel="stylesheet" href="../paperframe/paperframe.min.css">
+  <script src="../paperframe/jquery.min.js"></script>
+  <script src="../paperframe/main.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
+  <!--Chrome theme colour-->
+  <meta name="theme-color" content="#009688">
+  <!--Chrome add to home screen-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!--iOS add to home screen-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--Chrome app info -->
+  <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+  <div id="drawer" style="overflow-y: auto;">
+    <div class="header">
+      <div class="user">
+        <div class="avatar"></div>
+        <div class="name">First Last</div>
+        <div class="email">email@email.com</div>
+      </div>
+    </div>
+    <ul>
+      <a href="index.html">
+        <li active>
+          <i class="material-icons">home</i>
+          <span>Welcome</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Components</h2>
+      <a href="toolbars.html">
+        <li>
+          <i class="material-icons">line_weight</i>
+          <span>Toolbars</span>
+        </li>
+      </a>
+      <a href="drawer.html">
+        <li>
+          <i class="material-icons">menu</i>
+          <span>Drawer</span>
+        </li>
+      </a>
+      <a href="cards.html">
+        <li>
+          <i class="material-icons">view_agenda</i>
+          <span>Cards</span>
+        </li>
+      </a>
+      <a href="elevation.html">
+        <li>
+          <i class="material-icons">flip_to_front</i>
+          <span>Elevation</span>
+        </li>
+      </a>
+      <a href="tooltips.html">
+        <li>
+          <i class="material-icons">assistant</i>
+          <span>Tooltips</span>
+        </li>
+      </a>
+      <a href="input.html">
+        <li>
+          <i class="material-icons">space_bar</i>
+          <span>Input</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Resources</h2>
+      <a href="https://www.google.com/design/spec/material-design/introduction.html">
+        <li>
+          <i class="material-icons">view_carousel</i>
+          <span>Material design guidelines</span>
+        </li>
+      </a>
+      <a href="https://design.google.com/icons/">
+        <li>
+          <i class="material-icons">info</i>
+          <span>Material icons</span>
+        </li>
+      </a>
+    </ul>
+  </div>
+  <div id="scrim" onclick="toggleDrawer()"></div>
+  <div id="main" class="sticky">
+    <div id="toolbar" class="sticky tall">
+      <i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu</i>
+      <div id="title">PaperFrame</div>
+    </div>
+    <div class="container">
+      <div class="singlecol">
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Introduction</h1>
+            <h2>What is PaperFrame?</h2>
+          </div>
+          <div class="supportingtext">
+            <p>
+            PaperFrame is a material design framework based on vanilla HTML, CSS and JS. PaperFrame is currently in a pre-alpha stage. PaperFrame's goal is to be super fast and super light weight.
+          </p>
+          <p>
+            This framework is made with the material design guidelines not only as guidelines, but as rules. These pages serve as demo, documentation and instruction pages
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

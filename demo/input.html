@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html id="body">
+
+<head>
+  <title>Input - PaperFrame</title>
+  <link rel="stylesheet" href="../paperframe/paperframe.min.css">
+  <script src="../paperframe/jquery.min.js"></script>
+  <script src="../paperframe/main.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai-sublime.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!--Chrome theme colour-->
+  <meta name="theme-color" content="#009688">
+  <!--Chrome add to home screen-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!--iOS add to home screen-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--Chrome app info -->
+  <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+  <div id="drawer" style="overflow-y: auto;">
+    <div class="header">
+      <div class="user">
+        <div class="avatar"></div>
+        <div class="name">First Last</div>
+        <div class="email">email@email.com</div>
+      </div>
+    </div>
+    <ul>
+      <a href="index.html">
+        <li>
+          <i class="material-icons">home</i>
+          <span>Welcome</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Components</h2>
+      <a href="toolbars.html">
+        <li>
+          <i class="material-icons">line_weight</i>
+          <span>Toolbars</span>
+        </li>
+      </a>
+      <a href="drawer.html">
+        <li>
+          <i class="material-icons">menu</i>
+          <span>Drawer</span>
+        </li>
+      </a>
+      <a href="cards.html">
+        <li>
+          <i class="material-icons">view_agenda</i>
+          <span>Cards</span>
+        </li>
+      </a>
+      <a href="elevation.html">
+        <li>
+          <i class="material-icons">flip_to_front</i>
+          <span>Elevation</span>
+        </li>
+      </a>
+      <a href="tooltips.html">
+        <li>
+          <i class="material-icons">assistant</i>
+          <span>Tooltips</span>
+        </li>
+      </a>
+      <a href="input.html">
+        <li active>
+          <i class="material-icons">space_bar</i>
+          <span>Input</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Resources</h2>
+      <a href="https://www.google.com/design/spec/material-design/introduction.html">
+        <li>
+          <i class="material-icons">view_carousel</i>
+          <span>Material design guidelines</span>
+        </li>
+      </a>
+      <a href="https://design.google.com/icons/">
+        <li>
+          <i class="material-icons">info</i>
+          <span>Material icons</span>
+        </li>
+      </a>
+    </ul>
+  </div>
+  <div id="scrim" onclick="toggleDrawer()"></div>
+  <div id="main" class="sticky">
+    <div id="toolbar" class="sticky tall">
+      <i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu</i>
+      <div id="title">Input</div>
+    </div>
+    <div class="container">
+      <div class="singlecol">
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Input</h1>
+            <h2>An introduction to input</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Code</h1>
+            <button>button</button>
+            <button flat>button</button>
+            <button raised>button</button>
+            <textarea placeholder="Placeholder"></textarea>
+            <input type="text" placeholder="Placeholder">
+            <div id="fab"><i class="material-icons">send</i></div>
+            <br>
+            <div  class="smallfab"><i class="material-icons">send</i></div>
+          </div>
+        </div>
+        <div class="card"></div><div class="smallfab bottom"><i class="material-icons">send</i></div>
+        <div>
+          <pre>
+            <code class="html">
+&lt;!--Button-->
+&lt;button>button&lt;/button>
+
+&lt;!--Flat button-->
+&lt;button flat>button&lt;/button>
+
+&lt;!--Raised button-->
+&lt;button raised>button&lt;/button>
+
+&lt;!--Text area-->
+&lt;textarea placeholder="Placeholder">&lt;/textarea>
+
+&lt;!--Text input-->
+&lt;input type="text" placeholder="Placeholder">
+
+&lt;!--FAB-->
+&lt;div id="fab">
+  &lt;i class="material-icons">send&lt;/i>
+&lt;/div>
+
+&lt;!--Small FAB-->
+&lt;div  class="smallfab">
+  &lt;i class="material-icons">send&lt;/i>
+&lt;/div>
+
+&lt;!--FAB attached to card-->
+&lt;div class="card">&lt;/div>
+&lt;div class="smallfab bottom">
+  &lt;i class="material-icons">send&lt;/i>
+&lt;/div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

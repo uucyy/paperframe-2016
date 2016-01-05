@@ -1,0 +1,22 @@
+.tooltip{
+  & + .tip{
+    height: 0 !important;
+    transition: height .25s;
+    overflow-y: hidden;
+    background: #727272;
+    line-height: 32px;
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    color: rgba(255,255,255,.9);
+    border-radius: 2px;
+    height: 32px;
+    position: fixed;
+    opacity: 90%;
+  }
+}
+.tooltip:hover{
+  & + .tip{
+  height: 32px !important;
+  }
+}

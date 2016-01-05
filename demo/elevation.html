@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html id="body">
+
+<head>
+  <title>Elevation - PaperFrame</title>
+  <link rel="stylesheet" href="../paperframe/paperframe.min.css">
+  <script src="../paperframe/jquery.min.js"></script>
+  <script src="../paperframe/main.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai-sublime.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!--Chrome theme colour-->
+  <meta name="theme-color" content="#009688">
+  <!--Chrome add to home screen-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!--iOS add to home screen-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--Chrome app info -->
+  <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+  <div id="drawer">
+    <div class="header">
+      <div class="user">
+        <div class="avatar"></div>
+        <div class="name">First Last</div>
+        <div class="email">email@email.com</div>
+      </div>
+    </div>
+    <ul>
+      <a href="index.html">
+        <li>
+          <i class="material-icons">home</i>
+          <span>Welcome</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Components</h2>
+      <a href="toolbars.html">
+        <li>
+          <i class="material-icons">line_weight</i>
+          <span>Toolbars</span>
+        </li>
+      </a>
+      <a href="drawer.html">
+        <li>
+          <i class="material-icons">menu</i>
+          <span>Drawer</span>
+        </li>
+      </a>
+      <a href="cards.html">
+        <li>
+          <i class="material-icons">view_agenda</i>
+          <span>Cards</span>
+        </li>
+      </a>
+      <a href="elevation.html">
+        <li active>
+          <i class="material-icons">flip_to_front</i>
+          <span>Elevation</span>
+        </li>
+      </a>
+      <a href="tooltips.html">
+        <li>
+          <i class="material-icons">assistant</i>
+          <span>Tooltips</span>
+        </li>
+      </a>
+      <a href="input.html">
+        <li>
+          <i class="material-icons">space_bar</i>
+          <span>Input</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Resources</h2>
+      <a href="https://www.google.com/design/spec/material-design/introduction.html">
+        <li>
+          <i class="material-icons">view_carousel</i>
+          <span>Material design guidelines</span>
+        </li>
+      </a>
+      <a href="https://design.google.com/icons/">
+        <li>
+          <i class="material-icons">info</i>
+          <span>Material icons</span>
+        </li>
+      </a>
+    </ul>
+  </div>
+  <div id="scrim" onclick="toggleDrawer()"></div>
+  <div id="main" class="sticky">
+    <div id="toolbar" class="sticky tall">
+      <i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu</i>
+      <div id="title">Elevation</div>
+    </div>
+    <div class="container">
+      <div class="singlecol">
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Elevation</h1>
+            <h2>An introduction to elevation</h2>
+          </div>
+          <div class="supportingtext">
+            <p>Objects in material design possess similar qualities to objects in the physical world. In the physical world, objects can be stacked or affixed to one another, but cannot pass through each other. Objects cast shadows and reflect light.</p>
+            <p>These qualities form a spatial model that is familiar to users and can be applied consistently across apps. Underpinning this spatial model are the concepts of elevation and shadow.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Code</h1>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h2>Elevation 0</h2>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div class="card">
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext">
+            <div class="card" z-depth=0>
+            </div>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h2>Elevation 1</h2>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div class="card" z-depth=1>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext">
+            <div class="card" z-depth=1>
+            </div>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h2>Elevation 2</h2>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div class="card" z-depth=2>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext">
+            <div class="card" z-depth=2>
+            </div>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h2>Elevation 3</h2>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div class="card" z-depth=3>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext">
+            <div class="card" z-depth=3>
+            </div>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h2>Elevation 4</h2>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div class="card" z-depth=4>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext">
+            <div class="card" z-depth=4>
+            </div>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h2>Elevation 5</h2>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div class="card" z-depth=5>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext">
+            <div class="card" z-depth=5>
+            </div>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h2>Elevation 6</h2>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div class="card" z-depth=6>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext">
+            <div class="card" z-depth=6>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>

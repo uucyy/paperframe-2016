@@ -1,0 +1,11 @@
+.dualcol{
+  @include grid-column(6);
+  @media #{$small-only} {
+    &{
+      @include grid-column(12);
+    }
+  }
+}
+.singlecol{
+  @include grid-column(12);
+}

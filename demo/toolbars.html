@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html id="body">
+
+<head>
+  <title>Toolbar - PaperFrame</title>
+  <link rel="stylesheet" href="../paperframe/paperframe.min.css">
+  <script src="../paperframe/jquery.min.js"></script>
+  <script src="../paperframe/main.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai-sublime.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!--Chrome theme colour-->
+  <meta name="theme-color" content="#009688">
+  <!--Chrome add to home screen-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!--iOS add to home screen-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--Chrome app info -->
+  <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+  <div id="drawer">
+    <div class="header">
+      <div class="user">
+        <div class="avatar"></div>
+        <div class="name">First Last</div>
+        <div class="email">email@email.com</div>
+      </div>
+    </div>
+    <ul>
+      <a href="index.html">
+        <li>
+          <i class="material-icons">home</i>
+          <span>Welcome</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Components</h2>
+      <a href="toolbars.html">
+        <li active>
+          <i class="material-icons">line_weight</i>
+          <span>Toolbars</span>
+        </li>
+      </a>
+      <a href="drawer.html">
+        <li>
+          <i class="material-icons">menu</i>
+          <span>Drawer</span>
+        </li>
+      </a>
+      <a href="cards.html">
+        <li>
+          <i class="material-icons">view_agenda</i>
+          <span>Cards</span>
+        </li>
+      </a>
+      <a href="elevation.html">
+        <li>
+          <i class="material-icons">flip_to_front</i>
+          <span>Elevation</span>
+        </li>
+      </a>
+      <a href="tooltips.html">
+        <li>
+          <i class="material-icons">assistant</i>
+          <span>Tooltips</span>
+        </li>
+      </a>
+      <a href="input.html">
+        <li>
+          <i class="material-icons">space_bar</i>
+          <span>Input</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Resources</h2>
+      <a href="https://www.google.com/design/spec/material-design/introduction.html">
+        <li>
+          <i class="material-icons">view_carousel</i>
+          <span>Material design guidelines</span>
+        </li>
+      </a>
+      <a href="https://design.google.com/icons/">
+        <li>
+          <i class="material-icons">info</i>
+          <span>Material icons</span>
+        </li>
+      </a>
+    </ul>
+  </div>
+  <div id="scrim" onclick="toggleDrawer()"></div>
+  <div id="main" class="sticky">
+    <div id="toolbar" class="sticky tall">
+      <i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu</i>
+      <div id="title">Toolbars</div>
+    </div>
+    <div class="container">
+      <div class="singlecol">
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Toolbars</h1>
+            <h2>An introduction to toolbars</h2>
+          </div>
+          <div class="supportingtext">
+            The toolbar is used for branding, navigation, search, and actions. The nav icon at the left side of the app bar can be:
+            <ul>
+              <li>A control to open a navigation drawer.</li>
+              <li>An up arrow for navigating upward through your app's hierarchy.</li>
+              <li>Omitted entirely if no navigation is required from this screen.</li>
+              <li>The title in the app bar reflects the current page. It can be an app title, page title, or a page filter.</li>
+            </ul>
+            Icons on the right side of the app bar are app-related actions. The menu icon opens the overflow menu, which contains secondary actions and menu items like help, settings, and feedback.
+          </div>
+        </div>
+      </div>
+      <div class="singlecol">
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Variants of toolbars</h1>
+          </div>
+          <div class="supportingtext">
+            <p>The toolbar comes in three main variants:</p>
+            <ul>
+              <li>Regular</li>
+              <li>Medium tall</li>
+              <li>Tall</li>
+            </ul>
+            <h2>Sub variants</h2>
+            <p>Medium tall and tall both have one or more variants. These variants control the vertical positioning of the toolbar content. Medium tall has just one variant, bottom. Tall has two variants, middle and bottom.</p>
+            <h2>Extra</h2>
+            <p>Aside from the variants of the toolbar, all toolbars have two modes; sticky and scroll. Both of these modes can be used together or on their own.
+              <p>
+                <h3>Sticky</h3>
+                <p>The sticky mode makes the toolbar stick to the top of the page on scroll, meaning the toolbar is always visible.</p>
+                <h3>Scroll</h3>
+                <p>The scroll mode only affects medium-tall and tall. Scroll makes the toolbars collapse into regular height toolbarts upon scroll. The class is applied to any toolbar medium-tall or tall upon scroll when they are set to sticky, without you needing to write any code to make this happen</p>
+          </div>
+        </div>
+      </div>
+      <div class="singlecol">
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Code</h1>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h3>Regular toolbar</h3>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div id="toolbar">
+  &lt;i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu&lt;/i>
+  &lt;div id="title">PaperFrame&lt;/div>
+  &lt;i class="material-icons">more_vert&lt;/i>
+  &lt;i class="material-icons">search&lt;/i>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h3>Medium tall toolbar</h3>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div id="toolbar" class="mediumtall">
+  &lt;i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu&lt;/i>
+  &lt;div id="title">PaperFrame&lt;/div>
+  &lt;i class="material-icons">more_vert&lt;/i>
+  &lt;i class="material-icons">search&lt;/i>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h3>Tall toolbar</h3>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div id="toolbar" class="tall">
+  &lt;i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu&lt;/i>
+  &lt;div id="title">PaperFrame&lt;/div>
+  &lt;i class="material-icons">more_vert&lt;/i>
+  &lt;i class="material-icons">search&lt;/i>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h3>Sticky toolbar</h3>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div id="main" class="sticky">
+  &lt;div id="toolbar" class="sticky">
+    &lt;i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu&lt;/i>
+    &lt;div id="title">PaperFrame&lt;/div>
+    &lt;i class="material-icons">more_vert&lt;/i>
+    &lt;i class="material-icons">search&lt;/i>
+  &lt;/div>
+&lt;/div>
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

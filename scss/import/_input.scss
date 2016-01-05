@@ -1,0 +1,220 @@
+button {
+  text-transform: uppercase;
+  background: rgba(0,0,0,.0);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+  padding: 0 16px;
+  line-height: 36px;
+  cursor: pointer;
+  border-radius: 3px;
+  background: $primaryColour;
+  transition: background 0.4s;
+  &:active {
+    background: rgba(0,0,0,.2) !important;
+  }
+  &[raised] {
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    &:active {
+      box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+      background: $primaryColour !important;
+    }
+  }
+  &[flat] {
+    background: none;
+  }
+}
+button {
+
+}
+input[type=button] {
+  @extend button;
+}
+input[type=submit] {
+  @extend button;
+}
+#fab {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: $primaryColour;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 497;
+  transition: margin-bottom ease-in-out 0.3s, box-shadow 0.7s, transform 0.7s;
+  margin-bottom: 0;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  transform: translate3d(0);
+  i {
+    width: 64px;
+    text-align: center;
+    line-height: 64px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  &.hidden {
+    margin-bottom: -90px;
+  }
+  &:active {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  &.snackbarup{
+    margin-bottom: 48px;
+  }
+}
+.card ~ .smallfab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+  color: white;
+  background: #424242;
+  transition: box-shadow 0.7s;
+  &:active {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  &.bottom {
+    margin-top: -30px;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+  }
+  i {
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+  }
+}
+.smallfab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+  color: white;
+  background: #424242;
+  transition: box-shadow 0.7s;
+  cursor: pointer;
+  &:active {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  &.bottom {
+    margin-top: -30px;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+  }
+  i {
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}
+label {
+  margin-left: 30px;
+  [type=radio] {
+    display: none;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background: url(../scss/radiobutton_unchecked.svg);
+    background-size: cover;
+    background-position: center center;
+    margin-left: -25px;
+  }
+}
+input,
+textarea {
+  font-size: 18px;
+  padding: 10px;
+  color: $primaryColour;
+  text-shadow: 0 0 0 #000;
+  -webkit-text-fill-color: transparent;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  text-shadow: none;
+  -webkit-text-fill-color: initial;
+}
+input[type=text]{
+  border: none;
+  border-bottom-color: #c9c9c9;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  transition: border-bottom-color .3s;
+  display: block;
+  position: relative;
+  z-index: 10;
+  background: none;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  &:focus{
+    outline: none;
+    border-bottom-color: $primaryColour;
+  }
+  &:active{
+    outline: none;
+    border-bottom-color: $primaryColour;
+  }
+  & ~ label{
+    margin-top: -30px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 9;
+    opacity: .7;
+    transition: margin-top .4s, font-size .4s, color .4s, opacity .4s;
+    &.float{
+      margin-top: -55px;
+      font-size: 13px;
+      color: $primaryColour;
+      opacity: 1;
+    }
+  }
+}
+textarea{
+  border: none;
+  border-bottom-color: #c9c9c9;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  transition: border-bottom-color .3s;
+  display: block;
+  position: relative;
+  z-index: 10;
+  background: none;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  &:focus{
+    outline: none;
+    border-bottom-color: $primaryColour;
+  }
+  &:active{
+    outline: none;
+    border-bottom-color: $primaryColour;
+  }
+  & ~ label{
+    margin-top: -30px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 9;
+    opacity: .7;
+    transition: margin-top .4s, font-size .4s, color .4s, opacity .4s;
+    &.float{
+      margin-top: -55px;
+      font-size: 13px;
+      color: $primaryColour;
+      opacity: 1;
+    }
+  }
+}

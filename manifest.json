@@ -1,0 +1,7 @@
+{
+  "name": "PaperFrame",
+  "background_color": "#009688",
+  "theme_color": "#009688",
+  "start_url": "index.html",
+  "display": "standalone"
+}

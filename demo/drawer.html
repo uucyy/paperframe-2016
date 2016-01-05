@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html id="body">
+
+<head>
+  <title>Drawer - PaperFrame</title>
+  <link rel="stylesheet" href="../paperframe/paperframe.min.css">
+  <script src="../paperframe/jquery.min.js"></script>
+  <script src="../paperframe/main.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai-sublime.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!--Chrome theme colour-->
+  <meta name="theme-color" content="#009688">
+  <!--Chrome add to home screen-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!--iOS add to home screen-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--Chrome app info -->
+  <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+  <div id="drawer">
+    <div class="header">
+      <div class="user">
+        <div class="avatar"></div>
+        <div class="name">First Last</div>
+        <div class="email">email@email.com</div>
+      </div>
+    </div>
+    <ul>
+      <a href="index.html">
+        <li>
+          <i class="material-icons">home</i>
+          <span>Welcome</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Components</h2>
+      <a href="toolbars.html">
+        <li>
+          <i class="material-icons">line_weight</i>
+          <span>Toolbars</span>
+        </li>
+      </a>
+      <a href="drawer.html">
+        <li active>
+          <i class="material-icons">menu</i>
+          <span>Drawer</span>
+        </li>
+      </a>
+      <a href="cards.html">
+        <li>
+          <i class="material-icons">view_agenda</i>
+          <span>Cards</span>
+        </li>
+      </a>
+      <a href="elevation.html">
+        <li>
+          <i class="material-icons">flip_to_front</i>
+          <span>Elevation</span>
+        </li>
+      </a>
+      <a href="tooltips.html">
+        <li>
+          <i class="material-icons">assistant</i>
+          <span>Tooltips</span>
+        </li>
+      </a>
+      <a href="input.html">
+        <li>
+          <i class="material-icons">space_bar</i>
+          <span>Input</span>
+        </li>
+      </a>
+      <hr>
+      <h2>Resources</h2>
+      <a href="https://www.google.com/design/spec/material-design/introduction.html">
+        <li>
+          <i class="material-icons">view_carousel</i>
+          <span>Material design guidelines</span>
+        </li>
+      </a>
+      <a href="https://design.google.com/icons/">
+        <li>
+          <i class="material-icons">info</i>
+          <span>Material icons</span>
+        </li>
+      </a>
+    </ul>
+  </div>
+  <div id="scrim" onclick="toggleDrawer()"></div>
+  <div id="main" class="sticky">
+    <div id="toolbar" class="sticky tall">
+      <i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu</i>
+      <div id="title">Drawer</div>
+    </div>
+    <div class="container">
+      <div class="singlecol">
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Drawer</h1>
+            <h2>An introduction to the drawer</h2>
+          </div>
+          <div class="supportingtext">
+            <p>When there is insufficient space to support tabs, side navigation is a good alternative. Side navigation can display many navigation targets at once. A drawer remains hidden until invoked by the user.</p>
+            <p>Apps with a single "home" should list the most frequently accessed destinations at the top of side navigation.</p>
+            <p>Side navigation may appear either with or without a navigation drawer.</p>
+            <p>Appropriate for these hierarchies:</p>
+            <ul>
+              <li>Lateral navigation</li>
+              <li>Parents with siblings or peers</li>
+            </ul>
+            <p>Recommended for:</p>
+            <ul>
+              <li>Apps with many top-level views</li>
+              <li>Enabling quick navigation between unrelated views</li>
+              <li>Deep navigation structures</li>
+              <li>Reducing visibility of infrequent destinations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Code</h1>
+          </div>
+            <pre>
+              <code class="html">
+&lt;div id="drawer">
+  &lt;div class="header">
+    &lt;div class="user">
+      &lt;div class="avatar">&lt;/div>
+      &lt;div class="name">First Last&lt;/div>
+      &lt;div class="email">email@email.com&lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;ul>
+    &lt;a href="#">
+      &lt;li&lt;
+        &lt;i class="material-icons">info&lt;/i>
+        &lt;span>Item&lt;/span>
+      &lt;/li>
+    &lt;/a>
+    &lt;hr>
+    &lt;h2>Section&lt;/h2>
+    &lt;a href="#">
+      &lt;li>
+        &lt;i class="material-icons">info&lt;/i>
+        &lt;span>Item&lt;/span>
+      &lt;/li>
+    &lt;/a>
+  &lt;/ul>
+&lt;/div>
+&lt;div id="scrim" onclick="toggleDrawer()">&lt;/div>
+              </code>
+            </pre>
+            <div class="supportingtext" style="padding-bottom: 0;">
+            <p>This code alone has no toggle to activate the drawer manually when the drawer is off canvas, the following code will activate the drawer</p>
+          </div>
+            <pre>
+              <code class="html">
+&lt;button id="hamburger" onclick="toggleDrawer()">Toggle drawer&lt;/button>
+              </code>
+            </pre>
+            <div class="supportingtext">
+            <p>
+             You can apply the ID and the onclick attribute to any element.
+            </p>
+          </div>
+          </div>
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Extra</h1>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0">
+            <p>The drawer will always be visible when viewing on desktop or on a large tablet. On small tablets or phones, the drawer will be off canvas. When the drawer is off canvas, to reveal the drawer you must activate it.</p>
+            <h2>Item icons</h2>
+            <p>You can choose to either have an icon for each drawer item or not have one. To not have a drawer icon, remove the following code from the drawer item you don't want an icon on:</p>
+              </div>
+              <pre>
+                <code class="html">
+&lt;i class="material-icons">info&lt;/i>
+                </code>
+              </pre>
+              <div class="supportingtext">
+                <p>To add an icon to a drawer item, simply add the previous code before the span tag. The full list of usable icons are available <a href="https://design.google.com/icons/">here</a></p>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
