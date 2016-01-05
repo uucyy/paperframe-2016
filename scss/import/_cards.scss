@@ -50,3 +50,7 @@
     padding: 0 16px 24px;
   }
 }
+//Mixins
+@mixin card{
+  @extend .card;
+}

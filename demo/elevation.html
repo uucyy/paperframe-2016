@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html id="body">
+<html id="paperframe">
 
 <head>
   <title>Elevation - PaperFrame</title>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="../paperframe/paperframe.min.css">
-  <script src="../paperframe/jquery.min.js"></script>
-  <script src="../paperframe/main.min.js"></script>
+  <script src="../paperframe/paperframe.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai-sublime.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
@@ -116,11 +116,12 @@
             <h1>Code</h1>
           </div>
           <div class="supportingtext" style="padding-bottom: 0;">
+            <h1>HTML</h1>
             <h2>Elevation 0</h2>
           </div>
           <pre>
             <code class="html">
-&lt;div class="card">
+&lt;div class="card" z-depth=0>
 &lt;/div>
             </code>
           </pre>
@@ -205,6 +206,25 @@
           <div class="supportingtext">
             <div class="card" z-depth=6>
             </div>
+
+            <h1>Mixins (SCSS)</h1>
+            <h2>HTML</h2>
+            <pre>
+              <code class="html">
+&lt;div id="test">&lt;/div>
+              </code>
+            </pre>
+            <h2>SCSS</h2>
+            <pre>
+              <code class="css">
+#test{
+  @include z-depth(3);
+}
+              </code>
+            </pre>
+            <div class="supportingtext">
+              <div class="card" z-depth=3>
+              </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 function toggleDrawer() {
   var theDrawer = document.querySelector("#drawer");
   var theDrawerScrim = document.querySelector("#scrim");
-  var theBody = document.querySelector("#body");
+  var theBody = document.querySelector("#paperframe");
   if (theDrawer.classList.contains("draweropen")) {
     theDrawer.classList.remove("draweropen");
     theDrawerScrim.classList.remove("draweropen");
@@ -56,7 +56,7 @@ function toggleSnackbar() {
 }
 
 function toggleBottomsheet() {
-  var theBody = document.querySelector("#body");
+  var theBody = document.querySelector("#paperframe");
   var theBottomsheet = document.querySelector("#bottomsheet");
   var theBottomsheetScrim = document.querySelector("#scrimbottomsheet");
   if (theBottomsheet.classList.contains("show")) {
