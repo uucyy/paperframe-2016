@@ -1,2 +1,5 @@
 .sass-cache
+scss/_index.scss
+scss/radiobutton_checked.svg
+scss/radiobutton_unchecked.svg
 *.css.map
