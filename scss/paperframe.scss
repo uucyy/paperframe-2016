@@ -1,4 +1,9 @@
 @import "import/import";
+* {
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 html,
 body {
   padding: 0;
