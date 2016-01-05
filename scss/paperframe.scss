@@ -1,10 +1,9 @@
 @import "import/import";
-// HACK: Potential performance improvements 
+// HACK: Potential performance improvements
 * {
   -webkit-overflow-scrolling: touch;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform: translate3d(0,0,0);
 }
 html,
 body {
