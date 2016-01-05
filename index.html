@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html id="body">
+<html id="paperframe">
 
 <head>
   <title>PaperFrame</title>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="paperframe/paperframe.min.css">
-  <script src="paperframe/jquery.min.js"></script>
-  <script src="paperframe/main.min.js"></script>
+  <script src="paperframe/paperframe.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai-sublime.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
   <!--Chrome theme colour-->
   <meta name="theme-color" content="#009688">
   <!--Chrome add to home screen-->
@@ -96,7 +101,7 @@
     </div>
     <div class="container">
       <div class="singlecol">
-        <div id="welcome">
+        <div class="card">
           <div class="primarytitle">
             <h1>Introduction</h1>
             <h2>What is PaperFrame?</h2>
@@ -108,6 +113,46 @@
           <p>
             This framework is made with the material design guidelines not only as guidelines, but as rules. These pages serve as demo, documentation and instruction pages
           </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Getting set up</h1>
+          </div>
+          <div class="supportingtext">
+            <p>Paperframe is available in standard CSS and SCSS. It is recommended to use the SCSS variant in order to have a finer control on all elements and details, including global colour scheme.</p>
+            <h2>CSS</h2>
+            To get started with Paperframe using CSS, download the CSS variant into your project, then simply use the code below to start your project.
+            <pre>
+              <code class="html">
+&lt;!DOCTYPE html>
+&lt;html id="paperframe">
+&lt;head>
+  &lt;script src="https://code.jquery.com/jquery-2.1.4.min.js">&lt;/script>
+  &lt;link rel="stylesheet" href="paperframe/paperframe.min.css">
+  &lt;script src="paperframe/paperframe.min.js">&lt;/script>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
+&lt;/head>
+&lt;body>
+  &lt;!--Content goes here -->
+&lt;/body>
+&lt;/html>
+              </code>
+            </pre>
+            <h2>SCSS</h2>
+            <p>Assuming that you already know how to compile SCSS, simply add the following code at the top of your main SCSS file if your main SCSS file is in the root directory of your project.</p>
+            <pre>
+              <code class="css">
+@import 'paperframe/paperframe';
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Interested in contributing?</h1>
+            <h2>Visit the Paperframe repository over on Github</h2>
+            <a href="https://github.com/iKermitKiller/paperframe-2016">https://github.com/iKermitKiller/paperframe-2016</a>
           </div>
         </div>
       </div>
