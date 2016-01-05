@@ -1,7 +1,0 @@
-.singlecol{
-  @include grid-column(12);
-}
-#test{
-  @include z-depth(6);
-  @include card;
-}
