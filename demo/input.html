@@ -77,6 +77,12 @@
           <span>Input</span>
         </li>
       </a>
+      <a href="colour.html">
+        <li active>
+          <i class="material-icons">invert_colors</i>
+          <span>Colour</span>
+        </li>
+      </a>
       <hr>
       <h2>Resources</h2>
       <a href="https://www.google.com/design/spec/material-design/introduction.html">
@@ -120,7 +126,14 @@
           </div>
         </div>
         <div class="card"></div><div class="smallfab bottom"><i class="material-icons">send</i></div>
-        <div>
+        <br>
+        <div class="card">
+          <div class="primarytitle">
+            <h1>Code</h1>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0">
+            <h2>HTML</h2>
+          </div>
           <pre>
             <code class="html">
 &lt;!--Button-->
@@ -155,6 +168,42 @@
 &lt;/div>
             </code>
           </pre>
+          <div class="primarytitle">
+            <h1>Mixins (SCSS)</h1>
+          </div>
+          <div class="supportingtext" style="padding-bottom: 0">
+            <h2>HTML</h2>
+          </div>
+            <pre>
+              <code class="html">
+&lt;div id="test">button&lt;/div>
+              </code>
+            </pre>
+            <div class="supportingtext" style="padding-bottom: 0">
+              <h2>SCSS</h2>
+            </div>
+            <pre>
+              <code class="css">
+#test{
+  @import button;
+}
+              </code>
+            </pre>
+            <div class="supportingtext" style="padding-bottom: 0">
+              <h2>Attributes</h2>
+              <p>As with regular buttons in Paperframe, you can use the button type modifiers exactly the same.</p>
+              <h3>Example</h3>
+            </div>
+            <pre>
+              <code class="html">
+&lt;div id="test" flat>button&lt;/div>
+              </code>
+            </pre>
+            <div class="supportingtext">
+              <h3>Result</h3>
+              <button flat>button</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

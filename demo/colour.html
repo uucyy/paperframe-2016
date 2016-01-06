@@ -2,7 +2,7 @@
 <html id="paperframe">
 
 <head>
-  <title>PaperFrame</title>
+  <title>Colour - PaperFrame</title>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="../paperframe/paperframe.min.css">
   <script src="../paperframe/paperframe.min.js"></script>
@@ -34,7 +34,7 @@
     </div>
     <ul>
       <a href="index.html">
-        <li active>
+        <li>
           <i class="material-icons">home</i>
           <span>Welcome</span>
         </li>
@@ -78,7 +78,7 @@
         </li>
       </a>
       <a href="colour.html">
-        <li>
+        <li active>
           <i class="material-icons">invert_colors</i>
           <span>Colour</span>
         </li>
@@ -103,68 +103,55 @@
   <div id="main" class="sticky">
     <div id="toolbar" class="sticky tall">
       <i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu</i>
-      <div id="title">PaperFrame</div>
+      <div id="title">Colour</div>
     </div>
     <div class="container">
       <div class="small-12 large-12 columns">
         <div class="card">
           <div class="primarytitle">
-            <h1>Introduction</h1>
-            <h2>What is PaperFrame?</h2>
+            <h1>Colours</h1>
+            <h2>An introduction to colours</h2>
           </div>
           <div class="supportingtext">
-            <p>
-            PaperFrame is a material design framework based on vanilla HTML, CSS and JS. PaperFrame is currently in a pre-alpha stage. PaperFrame's goal is to be super fast and super light weight.
-          </p>
-          <p>
-            This framework is made with the material design guidelines not only as guidelines, but as rules. These pages serve as demo, documentation and instruction pages
-          </p>
+            <p>All of the colours available on the official material design guidelines provided by Google are available within Paperframe, including the variants of each colour. Currently these colours are only available when using Paperframe with SCSS.</p>
           </div>
         </div>
         <div class="card">
           <div class="primarytitle">
-            <h1>Getting set up</h1>
+            <h1>Code</h1>
           </div>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h2>Mixins (SCSS)</h2>
+            <h3>HTML</h3>
+          </div>
+          <pre>
+            <code class="html">
+&lt;div id="test">&lt;/div>
+&lt;div id="test2">&lt;/div>
+            </code>
+          </pre>
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h3>SCSS</h3>
+          </div>
+          <pre>
+            <code class="css">
+#test{
+  @include indigo(700);
+}
+#test2{
+  @include pink(400);
+}
+            </code>
+          </pre>
           <div class="supportingtext">
-            <p>Paperframe is available in standard CSS and SCSS. It is recommended to use the SCSS variant in order to have a finer control on all elements and details, including global colour scheme.</p>
-            <h2>CSS</h2>
-            To get started with Paperframe using CSS, download the CSS variant into your project, then simply use the code below to start your project.
-          </div>
-            <pre>
-              <code class="html">
-&lt;!DOCTYPE html>
-&lt;html id="paperframe">
-&lt;head>
-  &lt;script src="https://code.jquery.com/jquery-2.1.4.min.js">&lt;/script>
-  &lt;link rel="stylesheet" href="paperframe/paperframe.min.css">
-  &lt;script src="paperframe/paperframe.min.js">&lt;/script>
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0" />
-&lt;/head>
-&lt;body>
-  &lt;!--Content goes here -->
-&lt;/body>
-&lt;/html>
-              </code>
-            </pre>
-            <div class="supportingtext">
-            <h2>SCSS</h2>
-            <p>Assuming that you already know how to compile SCSS, simply add the following code at the top of your main SCSS file if your main SCSS file is in the root directory of your project.</p>
-          </div>
-            <pre>
-              <code class="css">
-@import 'paperframe/paperframe';
-              </code>
-            </pre>
-          </div>
-        <div class="card">
-          <div class="primarytitle">
-            <h1>Interested in contributing?</h1>
-            <h2>Visit the Paperframe repository over on Github</h2>
-            <a href="https://github.com/iKermitKiller/paperframe-2016">https://github.com/iKermitKiller/paperframe-2016</a>
+            <h3>Result</h3>
+            <div class="card" z-depth=0 style="background: #303F9F;"></div>
+            <div class="card" z-depth=0 style="background: #EC407A;"></div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </body>
 
 </html>

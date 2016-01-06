@@ -5,3 +5,1260 @@ $text: lighten($base, 13%);
 $secondaryText: lighten($base, 46%);
 $disabledText: lighten($base, 62%);
 $divider: lighten($base, 88%);
+
+//Red
+@mixin red($variant){
+  @if $variant == 50{
+    background: #FFEBEE;
+  } @else if $variant == 100{
+    background: #FFCDD2;
+  } @else if $variant == 200{
+    background: #EF9A9A;
+  } @else if $variant == 300{
+    background: #E57373;
+  } @else if $variant == 400{
+    background: #EF5350;
+  } @else if $variant == 500{
+    background: #F44336;
+  } @else if $variant == 600{
+    background: #E53935;
+  } @else if $variant == 700{
+    background: #D32F2F;
+  } @else if $variant == 800{
+    background: #C62828;
+  } @else if $variant == 900{
+    background: #B71C1C;
+  } @else if $variant == A100 or $variant == a100{
+    background: #FF8A80;
+  } @else if $variant == A200 or $variant == a200{
+    background: #FF5252;
+  } @else if $variant == A400 or $variant == a400{
+    background: #FF1744;
+  } @else if $variant == A700 or $variant == a700{
+    background: #D50000;
+  } @else{
+    background: #F44336;
+  }
+}
+//Pink
+@mixin pink($variant){
+  @if $variant == 50{
+    background: #FCE4EC;
+  } @else if $variant == 100{
+    background: #F8BBD0;
+  } @else if $variant == 200{
+    background: #F48FB1;
+  } @else if $variant == 300{
+    background: #F06292;
+  } @else if $variant == 400{
+    background: #EC407A;
+  } @else if $variant == 500{
+    background: #E91E63;
+  } @else if $variant == 600{
+    background: #D81B60;
+  } @else if $variant == 700{
+    background: #C2185B;
+  } @else if $variant == 800{
+    background: #AD1457;
+  } @else if $variant == 900{
+    background: #880E4F;
+  } @else if $variant == A100 or $variant == a100{
+    background: #FF80AB;
+  } @else if $variant == A200 or $variant == a200{
+    background: #FF4081;
+  } @else if $variant == A400 or $variant == a400{
+    background: #F50057;
+  } @else if $variant == A700 or $variant == a700{
+    background: #C51162;
+  } @else{
+    background: #E91E63;
+  }
+}
+//Purple
+@mixin purple($variant){
+  @if $variant == 50{
+    background: #F3E5F5;
+  } @else if $variant == 100{
+    background: #E1BEE7;
+  } @else if $variant == 200{
+    background: #CE93D8;
+  } @else if $variant == 300{
+    background: #BA68C8;
+  } @else if $variant == 400{
+    background: #AB47BC;
+  } @else if $variant == 500{
+    background: #9C27B0;
+  } @else if $variant == 600{
+    background: #8E24AA;
+  } @else if $variant == 700{
+    background: #7B1FA2;
+  } @else if $variant == 800{
+    background: #6A1B9A;
+  } @else if $variant == 900{
+    background: #4A148C;
+  } @else if $variant == A100 or $variant == a100{
+    background: #EA80FC;
+  } @else if $variant == A200 or $variant == a200{
+    background: #E040FB;
+  } @else if $variant == A400 or $variant == a400{
+    background: #D500F9;
+  } @else if $variant == A700 or $variant == a700{
+    background: #AA00FF;
+  } @else{
+    background: #9C27B0;
+  }
+}
+//Deep Purple
+@mixin deepPurple($variant){
+  @if $variant == 50{
+    background: #EDE7F6;
+  } @else if $variant == 100{
+    background: #D1C4E9;
+  } @else if $variant == 200{
+    background: #B39DDB;
+  } @else if $variant == 300{
+    background: #9575CD;
+  } @else if $variant == 400{
+    background: #7E57C2;
+  } @else if $variant == 500{
+    background: #673AB7;
+  } @else if $variant == 600{
+    background: #5E35B1;
+  } @else if $variant == 700{
+    background: #512DA8;
+  } @else if $variant == 800{
+    background: #4527A0;
+  } @else if $variant == 900{
+    background: #311B92;
+  } @else if $variant == A100 or $variant == a100{
+    background: #B388FF;
+  } @else if $variant == A200 or $variant == a200{
+    background: #7C4DFF;
+  } @else if $variant == A400 or $variant == a400{
+    background: #651FFF;
+  } @else if $variant == A700 or $variant == a700{
+    background: #6200EA;
+  } @else{
+    background: #673AB7;
+  }
+}
+//Indigo
+@mixin indigo($variant){
+  @if $variant == 50{
+    background: #E8EAF6;
+  } @else if $variant == 100{
+    background: #C5CAE9;
+  } @else if $variant == 200{
+    background: #9FA8DA;
+  } @else if $variant == 300{
+    background: #7986CB;
+  } @else if $variant == 400{
+    background: #5C6BC0;
+  } @else if $variant == 500{
+    background: #3F51B5;
+  } @else if $variant == 600{
+    background: #3949AB;
+  } @else if $variant == 700{
+    background: #303F9F;
+  } @else if $variant == 800{
+    background: #283593;
+  } @else if $variant == 900{
+    background: #1A237E;
+  } @else if $variant == A100 or $variant == a100{
+    background: #8C9EFF;
+  } @else if $variant == A200 or $variant == a200{
+    background: #536DFE;
+  } @else if $variant == A400 or $variant == a400{
+    background: #3D5AFE;
+  } @else if $variant == A700 or $variant == a700{
+    background: #304FFE;
+  } @else{
+    background: #3F51B5;
+  }
+}
+//Blue
+@mixin blue($variant){
+  @if $variant == 50{
+    background: #E3F2FD;
+  } @else if $variant == 100{
+    background: #BBDEFB;
+  } @else if $variant == 200{
+    background: #90CAF9;
+  } @else if $variant == 300{
+    background: #64B5F6;
+  } @else if $variant == 400{
+    background: #42A5F5;
+  } @else if $variant == 500{
+    background: #2196F3;
+  } @else if $variant == 600{
+    background: #1E88E5;
+  } @else if $variant == 700{
+    background: #1976D2;
+  } @else if $variant == 800{
+    background: #1565C0;
+  } @else if $variant == 900{
+    background: #0D47A1;
+  } @else if $variant == A100 or $variant == a100{
+    background: #82B1FF;
+  } @else if $variant == A200 or $variant == a200{
+    background: #448AFF;
+  } @else if $variant == A400 or $variant == a400{
+    background: #2979FF;
+  } @else if $variant == A700 or $variant == a700{
+    background: #2962FF;
+  } @else{
+    background: #2196F3;
+  }
+}
+//Light blue
+@mixin lightBlue($variant){
+  @if $variant == 50{
+    background: #E1F5FE;
+  } @else if $variant == 100{
+    background: #B3E5FC;
+  } @else if $variant == 200{
+    background: #81D4FA;
+  } @else if $variant == 300{
+    background: #4FC3F7;
+  } @else if $variant == 400{
+    background: #29B6F6;
+  } @else if $variant == 500{
+    background: #03A9F4;
+  } @else if $variant == 600{
+    background: #039BE5;
+  } @else if $variant == 700{
+    background: #0288D1;
+  } @else if $variant == 800{
+    background: #0277BD;
+  } @else if $variant == 900{
+    background: #01579B;
+  } @else if $variant == A100 or $variant == a100{
+    background: #80D8FF;
+  } @else if $variant == A200 or $variant == a200{
+    background: #40C4FF;
+  } @else if $variant == A400 or $variant == a400{
+    background: #00B0FF;
+  } @else if $variant == A700 or $variant == a700{
+    background: #0091EA;
+  } @else{
+    background: #03A9F4;
+  }
+}
+//Cyan
+@mixin cyan($variant){
+  @if $variant == 50{
+    background: #E0F7FA;
+  } @else if $variant == 100{
+    background: #B2EBF2;
+  } @else if $variant == 200{
+    background: #80DEEA;
+  } @else if $variant == 300{
+    background: #4DD0E1;
+  } @else if $variant == 400{
+    background: #26C6DA;
+  } @else if $variant == 500{
+    background: #00BCD4;
+  } @else if $variant == 600{
+    background: #00ACC1;
+  } @else if $variant == 700{
+    background: #0097A7;
+  } @else if $variant == 800{
+    background: #00838F;
+  } @else if $variant == 900{
+    background: #006064;
+  } @else if $variant == A100 or $variant == a100{
+    background: #84FFFF;
+  } @else if $variant == A200 or $variant == a200{
+    background: #18FFFF;
+  } @else if $variant == A400 or $variant == a400{
+    background: #00E5FF;
+  } @else if $variant == A700 or $variant == a700{
+    background: #00B8D4;
+  } @else{
+    background: #00BCD4;
+  }
+}
+//Teal
+@mixin teal($variant){
+  @if $variant == 50{
+    background: #E0F2F1;
+  } @else if $variant == 100{
+    background: #B2DFDB;
+  } @else if $variant == 200{
+    background: #80CBC4;
+  } @else if $variant == 300{
+    background: #4DB6AC;
+  } @else if $variant == 400{
+    background: #26A69A;
+  } @else if $variant == 500{
+    background: #009688;
+  } @else if $variant == 600{
+    background: #00897B;
+  } @else if $variant == 700{
+    background: #00796B;
+  } @else if $variant == 800{
+    background: #00695C;
+  } @else if $variant == 900{
+    background: #004D40;
+  } @else if $variant == A100 or $variant == a100{
+    background: #A7FFEB;
+  } @else if $variant == A200 or $variant == a200{
+    background: #64FFDA;
+  } @else if $variant == A400 or $variant == a400{
+    background: #1DE9B6;
+  } @else if $variant == A700 or $variant == a700{
+    background: #00BFA5;
+  } @else{
+    background: #009688;
+  }
+}
+//Green
+@mixin green($variant){
+  @if $variant == 50{
+    background: #E8F5E9;
+  } @else if $variant == 100{
+    background: #C8E6C9;
+  } @else if $variant == 200{
+    background: #A5D6A7;
+  } @else if $variant == 300{
+    background: #81C784;
+  } @else if $variant == 400{
+    background: #66BB6A;
+  } @else if $variant == 500{
+    background: #4CAF50;
+  } @else if $variant == 600{
+    background: #43A047;
+  } @else if $variant == 700{
+    background: #388E3C;
+  } @else if $variant == 800{
+    background: #2E7D32;
+  } @else if $variant == 900{
+    background: #1B5E20;
+  } @else if $variant == A100 or $variant == a100{
+    background: #B9F6CA;
+  } @else if $variant == A200 or $variant == a200{
+    background: #69F0AE;
+  } @else if $variant == A400 or $variant == a400{
+    background: #00E676;
+  } @else if $variant == A700 or $variant == a700{
+    background: #00C853;
+  } @else{
+    background: #4CAF50;
+  }
+}
+//Light green
+@mixin lightGreen($variant){
+  @if $variant == 50{
+    background: #F1F8E9;
+  } @else if $variant == 100{
+    background: #DCEDC8;
+  } @else if $variant == 200{
+    background: #C5E1A5;
+  } @else if $variant == 300{
+    background: #AED581;
+  } @else if $variant == 400{
+    background: #9CCC65;
+  } @else if $variant == 500{
+    background: #8BC34A;
+  } @else if $variant == 600{
+    background: #7CB342;
+  } @else if $variant == 700{
+    background: #689F38;
+  } @else if $variant == 800{
+    background: #558B2F;
+  } @else if $variant == 900{
+    background: #33691E;
+  } @else if $variant == A100 or $variant == a100{
+    background: #CCFF90;
+  } @else if $variant == A200 or $variant == a200{
+    background: #B2FF59;
+  } @else if $variant == A400 or $variant == a400{
+    background: #76FF03;
+  } @else if $variant == A700 or $variant == a700{
+    background: #64DD17;
+  } @else{
+    background: #8BC34A;
+  }
+}
+//Lime
+@mixin lime($variant){
+  @if $variant == 50{
+    background: #F9FBE7;
+  } @else if $variant == 100{
+    background: #F0F4C3;
+  } @else if $variant == 200{
+    background: #E6EE9C;
+  } @else if $variant == 300{
+    background: #DCE775;
+  } @else if $variant == 400{
+    background: #D4E157;
+  } @else if $variant == 500{
+    background: #CDDC39;
+  } @else if $variant == 600{
+    background: #C0CA33;
+  } @else if $variant == 700{
+    background: #AFB42B;
+  } @else if $variant == 800{
+    background: #9E9D24;
+  } @else if $variant == 900{
+    background: #827717;
+  } @else if $variant == A100 or $variant == a100{
+    background: #F4FF81;
+  } @else if $variant == A200 or $variant == a200{
+    background: #EEFF41;
+  } @else if $variant == A400 or $variant == a400{
+    background: #C6FF00;
+  } @else if $variant == A700 or $variant == a700{
+    background: #AEEA00;
+  } @else{
+    background: #CDDC39;
+  }
+}
+//Yellow
+@mixin yellow($variant){
+  @if $variant == 50{
+    background: #FFFDE7;
+  } @else if $variant == 100{
+    background: #FFF9C4;
+  } @else if $variant == 200{
+    background: #FFF59D;
+  } @else if $variant == 300{
+    background: #FFF176;
+  } @else if $variant == 400{
+    background: #FFEE58;
+  } @else if $variant == 500{
+    background: #FFEB3B;
+  } @else if $variant == 600{
+    background: #FDD835;
+  } @else if $variant == 700{
+    background: #FBC02D;
+  } @else if $variant == 800{
+    background: #F9A825;
+  } @else if $variant == 900{
+    background: #F57F17;
+  } @else if $variant == A100 or $variant == a100{
+    background: #FFFF8D;
+  } @else if $variant == A200 or $variant == a200{
+    background: #FFFF00;
+  } @else if $variant == A400 or $variant == a400{
+    background: #FFEA00;
+  } @else if $variant == A700 or $variant == a700{
+    background: #FFD600;
+  } @else{
+    background: #FFEB3B;
+  }
+}
+//Amber
+@mixin amber($variant){
+  @if $variant == 50{
+    background: #FFF8E1;
+  } @else if $variant == 100{
+    background: #FFECB3;
+  } @else if $variant == 200{
+    background: #FFE082;
+  } @else if $variant == 300{
+    background: #FFD54F;
+  } @else if $variant == 400{
+    background: #FFCA28;
+  } @else if $variant == 500{
+    background: #FFC107;
+  } @else if $variant == 600{
+    background: #FFB300;
+  } @else if $variant == 700{
+    background: #FFA000;
+  } @else if $variant == 800{
+    background: #FF8F00;
+  } @else if $variant == 900{
+    background: #FF6F00;
+  } @else if $variant == A100 or $variant == a100{
+    background: #FFE57F;
+  } @else if $variant == A200 or $variant == a200{
+    background: #FFD740;
+  } @else if $variant == A400 or $variant == a400{
+    background: #FFC400;
+  } @else if $variant == A700 or $variant == a700{
+    background: #FFAB00;
+  } @else{
+    background: #FFC107;
+  }
+}
+//Orange
+@mixin orange($variant){
+  @if $variant == 50{
+    background: #FFF3E0;
+  } @else if $variant == 100{
+    background: #FFE0B2;
+  } @else if $variant == 200{
+    background: #FFCC80;
+  } @else if $variant == 300{
+    background: #FFB74D;
+  } @else if $variant == 400{
+    background: #FFA726;
+  } @else if $variant == 500{
+    background: #FF9800;
+  } @else if $variant == 600{
+    background: #FB8C00;
+  } @else if $variant == 700{
+    background: #F57C00;
+  } @else if $variant == 800{
+    background: #EF6C00;
+  } @else if $variant == 900{
+    background: #E65100;
+  } @else if $variant == A100 or $variant == a100{
+    background: #FFD180;
+  } @else if $variant == A200 or $variant == a200{
+    background: #FFAB40;
+  } @else if $variant == A400 or $variant == a400{
+    background: #FF9100;
+  } @else if $variant == A700 or $variant == a700{
+    background: #FF6D00;
+  } @else{
+    background: #FF9800;
+  }
+}
+//Deep orange
+@mixin deepOrange($variant){
+  @if $variant == 50{
+    background: #FBE9E7;
+  } @else if $variant == 100{
+    background: #FFCCBC;
+  } @else if $variant == 200{
+    background: #FFAB91;
+  } @else if $variant == 300{
+    background: #FF8A65;
+  } @else if $variant == 400{
+    background: #FF7043;
+  } @else if $variant == 500{
+    background: #FF5722;
+  } @else if $variant == 600{
+    background: #F4511E;
+  } @else if $variant == 700{
+    background: #E64A19;
+  } @else if $variant == 800{
+    background: #D84315;
+  } @else if $variant == 900{
+    background: #BF360C;
+  } @else if $variant == A100 or $variant == a100{
+    background: #FF9E80;
+  } @else if $variant == A200 or $variant == a200{
+    background: #FF6E40;
+  } @else if $variant == A400 or $variant == a400{
+    background: #FF3D00;
+  } @else if $variant == A700 or $variant == a700{
+    background: #DD2C00;
+  } @else{
+    background: #FF5722;
+  }
+}
+//Brown
+@mixin brown($variant){
+  @if $variant == 50{
+    background: #EFEBE9;
+  } @else if $variant == 100{
+    background: #D7CCC8;
+  } @else if $variant == 200{
+    background: #BCAAA4;
+  } @else if $variant == 300{
+    background: #A1887F;
+  } @else if $variant == 400{
+    background: #8D6E63;
+  } @else if $variant == 500{
+    background: #795548;
+  } @else if $variant == 600{
+    background: #6D4C41;
+  } @else if $variant == 700{
+    background: #5D4037;
+  } @else if $variant == 800{
+    background: #4E342E;
+  } @else if $variant == 900{
+    background: #3E2723;
+  } @else{
+    background: #795548;
+  }
+}
+//Brown
+@mixin grey($variant){
+  @if $variant == 50{
+    background: #FAFAFA;
+  } @else if $variant == 100{
+    background: #F5F5F5;
+  } @else if $variant == 200{
+    background: #EEEEEE;
+  } @else if $variant == 300{
+    background: #E0E0E0;
+  } @else if $variant == 400{
+    background: #BDBDBD;
+  } @else if $variant == 500{
+    background: #9E9E9E;
+  } @else if $variant == 600{
+    background: #757575;
+  } @else if $variant == 700{
+    background: #616161;
+  } @else if $variant == 800{
+    background: #424242;
+  } @else if $variant == 900{
+    background: #212121;
+  } @else{
+    background: #9E9E9E;
+  }
+}
+//Blue grey
+@mixin blueGrey($variant){
+  @if $variant == 50{
+    background: #ECEFF1;
+  } @else if $variant == 100{
+    background: #CFD8DC;
+  } @else if $variant == 200{
+    background: #B0BEC5;
+  } @else if $variant == 300{
+    background: #90A4AE;
+  } @else if $variant == 400{
+    background: #78909C;
+  } @else if $variant == 500{
+    background: #607D8B;
+  } @else if $variant == 600{
+    background: #546E7A;
+  } @else if $variant == 700{
+    background: #455A64;
+  } @else if $variant == 800{
+    background: #37474F;
+  } @else if $variant == 900{
+    background: #263238;
+  } @else{
+    background: #607D8B;
+  }
+}
+@mixin black{
+  background: black;
+}
+@mixin white{
+  background: white;
+}
+//Red
+@mixin redText($variant){
+  @if $variant == 50{
+    color: #FFEBEE;
+  } @else if $variant == 100{
+    color: #FFCDD2;
+  } @else if $variant == 200{
+    color: #EF9A9A;
+  } @else if $variant == 300{
+    color: #E57373;
+  } @else if $variant == 400{
+    color: #EF5350;
+  } @else if $variant == 500{
+    color: #F44336;
+  } @else if $variant == 600{
+    color: #E53935;
+  } @else if $variant == 700{
+    color: #D32F2F;
+  } @else if $variant == 800{
+    color: #C62828;
+  } @else if $variant == 900{
+    color: #B71C1C;
+  } @else if $variant == A100 or $variant == a100{
+    color: #FF8A80;
+  } @else if $variant == A200 or $variant == a200{
+    color: #FF5252;
+  } @else if $variant == A400 or $variant == a400{
+    color: #FF1744;
+  } @else if $variant == A700 or $variant == a700{
+    color: #D50000;
+  } @else{
+    color: #F44336;
+  }
+}
+//Pink
+@mixin pinkText($variant){
+  @if $variant == 50{
+    color: #FCE4EC;
+  } @else if $variant == 100{
+    color: #F8BBD0;
+  } @else if $variant == 200{
+    color: #F48FB1;
+  } @else if $variant == 300{
+    color: #F06292;
+  } @else if $variant == 400{
+    color: #EC407A;
+  } @else if $variant == 500{
+    color: #E91E63;
+  } @else if $variant == 600{
+    color: #D81B60;
+  } @else if $variant == 700{
+    color: #C2185B;
+  } @else if $variant == 800{
+    color: #AD1457;
+  } @else if $variant == 900{
+    color: #880E4F;
+  } @else if $variant == A100 or $variant == a100{
+    color: #FF80AB;
+  } @else if $variant == A200 or $variant == a200{
+    color: #FF4081;
+  } @else if $variant == A400 or $variant == a400{
+    color: #F50057;
+  } @else if $variant == A700 or $variant == a700{
+    color: #C51162;
+  } @else{
+    color: #E91E63;
+  }
+}
+//Purple
+@mixin purpleText($variant){
+  @if $variant == 50{
+    color: #F3E5F5;
+  } @else if $variant == 100{
+    color: #E1BEE7;
+  } @else if $variant == 200{
+    color: #CE93D8;
+  } @else if $variant == 300{
+    color: #BA68C8;
+  } @else if $variant == 400{
+    color: #AB47BC;
+  } @else if $variant == 500{
+    color: #9C27B0;
+  } @else if $variant == 600{
+    color: #8E24AA;
+  } @else if $variant == 700{
+    color: #7B1FA2;
+  } @else if $variant == 800{
+    color: #6A1B9A;
+  } @else if $variant == 900{
+    color: #4A148C;
+  } @else if $variant == A100 or $variant == a100{
+    color: #EA80FC;
+  } @else if $variant == A200 or $variant == a200{
+    color: #E040FB;
+  } @else if $variant == A400 or $variant == a400{
+    color: #D500F9;
+  } @else if $variant == A700 or $variant == a700{
+    color: #AA00FF;
+  } @else{
+    color: #9C27B0;
+  }
+}
+//Deep Purple
+@mixin deepPurpleText($variant){
+  @if $variant == 50{
+    color: #EDE7F6;
+  } @else if $variant == 100{
+    color: #D1C4E9;
+  } @else if $variant == 200{
+    color: #B39DDB;
+  } @else if $variant == 300{
+    color: #9575CD;
+  } @else if $variant == 400{
+    color: #7E57C2;
+  } @else if $variant == 500{
+    color: #673AB7;
+  } @else if $variant == 600{
+    color: #5E35B1;
+  } @else if $variant == 700{
+    color: #512DA8;
+  } @else if $variant == 800{
+    color: #4527A0;
+  } @else if $variant == 900{
+    color: #311B92;
+  } @else if $variant == A100 or $variant == a100{
+    color: #B388FF;
+  } @else if $variant == A200 or $variant == a200{
+    color: #7C4DFF;
+  } @else if $variant == A400 or $variant == a400{
+    color: #651FFF;
+  } @else if $variant == A700 or $variant == a700{
+    color: #6200EA;
+  } @else{
+    color: #673AB7;
+  }
+}
+//Indigo
+@mixin indigoText($variant){
+  @if $variant == 50{
+    color: #E8EAF6;
+  } @else if $variant == 100{
+    color: #C5CAE9;
+  } @else if $variant == 200{
+    color: #9FA8DA;
+  } @else if $variant == 300{
+    color: #7986CB;
+  } @else if $variant == 400{
+    color: #5C6BC0;
+  } @else if $variant == 500{
+    color: #3F51B5;
+  } @else if $variant == 600{
+    color: #3949AB;
+  } @else if $variant == 700{
+    color: #303F9F;
+  } @else if $variant == 800{
+    color: #283593;
+  } @else if $variant == 900{
+    color: #1A237E;
+  } @else if $variant == A100 or $variant == a100{
+    color: #8C9EFF;
+  } @else if $variant == A200 or $variant == a200{
+    color: #536DFE;
+  } @else if $variant == A400 or $variant == a400{
+    color: #3D5AFE;
+  } @else if $variant == A700 or $variant == a700{
+    color: #304FFE;
+  } @else{
+    color: #3F51B5;
+  }
+}
+//Blue
+@mixin blueText($variant){
+  @if $variant == 50{
+    color: #E3F2FD;
+  } @else if $variant == 100{
+    color: #BBDEFB;
+  } @else if $variant == 200{
+    color: #90CAF9;
+  } @else if $variant == 300{
+    color: #64B5F6;
+  } @else if $variant == 400{
+    color: #42A5F5;
+  } @else if $variant == 500{
+    color: #2196F3;
+  } @else if $variant == 600{
+    color: #1E88E5;
+  } @else if $variant == 700{
+    color: #1976D2;
+  } @else if $variant == 800{
+    color: #1565C0;
+  } @else if $variant == 900{
+    color: #0D47A1;
+  } @else if $variant == A100 or $variant == a100{
+    color: #82B1FF;
+  } @else if $variant == A200 or $variant == a200{
+    color: #448AFF;
+  } @else if $variant == A400 or $variant == a400{
+    color: #2979FF;
+  } @else if $variant == A700 or $variant == a700{
+    color: #2962FF;
+  } @else{
+    color: #2196F3;
+  }
+}
+//Light blue
+@mixin lightBlueText($variant){
+  @if $variant == 50{
+    color: #E1F5FE;
+  } @else if $variant == 100{
+    color: #B3E5FC;
+  } @else if $variant == 200{
+    color: #81D4FA;
+  } @else if $variant == 300{
+    color: #4FC3F7;
+  } @else if $variant == 400{
+    color: #29B6F6;
+  } @else if $variant == 500{
+    color: #03A9F4;
+  } @else if $variant == 600{
+    color: #039BE5;
+  } @else if $variant == 700{
+    color: #0288D1;
+  } @else if $variant == 800{
+    color: #0277BD;
+  } @else if $variant == 900{
+    color: #01579B;
+  } @else if $variant == A100 or $variant == a100{
+    color: #80D8FF;
+  } @else if $variant == A200 or $variant == a200{
+    color: #40C4FF;
+  } @else if $variant == A400 or $variant == a400{
+    color: #00B0FF;
+  } @else if $variant == A700 or $variant == a700{
+    color: #0091EA;
+  } @else{
+    color: #03A9F4;
+  }
+}
+//Cyan
+@mixin cyanText($variant){
+  @if $variant == 50{
+    color: #E0F7FA;
+  } @else if $variant == 100{
+    color: #B2EBF2;
+  } @else if $variant == 200{
+    color: #80DEEA;
+  } @else if $variant == 300{
+    color: #4DD0E1;
+  } @else if $variant == 400{
+    color: #26C6DA;
+  } @else if $variant == 500{
+    color: #00BCD4;
+  } @else if $variant == 600{
+    color: #00ACC1;
+  } @else if $variant == 700{
+    color: #0097A7;
+  } @else if $variant == 800{
+    color: #00838F;
+  } @else if $variant == 900{
+    color: #006064;
+  } @else if $variant == A100 or $variant == a100{
+    color: #84FFFF;
+  } @else if $variant == A200 or $variant == a200{
+    color: #18FFFF;
+  } @else if $variant == A400 or $variant == a400{
+    color: #00E5FF;
+  } @else if $variant == A700 or $variant == a700{
+    color: #00B8D4;
+  } @else{
+    color: #00BCD4;
+  }
+}
+//Teal
+@mixin tealText($variant){
+  @if $variant == 50{
+    color: #E0F2F1;
+  } @else if $variant == 100{
+    color: #B2DFDB;
+  } @else if $variant == 200{
+    color: #80CBC4;
+  } @else if $variant == 300{
+    color: #4DB6AC;
+  } @else if $variant == 400{
+    color: #26A69A;
+  } @else if $variant == 500{
+    color: #009688;
+  } @else if $variant == 600{
+    color: #00897B;
+  } @else if $variant == 700{
+    color: #00796B;
+  } @else if $variant == 800{
+    color: #00695C;
+  } @else if $variant == 900{
+    color: #004D40;
+  } @else if $variant == A100 or $variant == a100{
+    color: #A7FFEB;
+  } @else if $variant == A200 or $variant == a200{
+    color: #64FFDA;
+  } @else if $variant == A400 or $variant == a400{
+    color: #1DE9B6;
+  } @else if $variant == A700 or $variant == a700{
+    color: #00BFA5;
+  } @else{
+    color: #009688;
+  }
+}
+//Green
+@mixin greenText($variant){
+  @if $variant == 50{
+    color: #E8F5E9;
+  } @else if $variant == 100{
+    color: #C8E6C9;
+  } @else if $variant == 200{
+    color: #A5D6A7;
+  } @else if $variant == 300{
+    color: #81C784;
+  } @else if $variant == 400{
+    color: #66BB6A;
+  } @else if $variant == 500{
+    color: #4CAF50;
+  } @else if $variant == 600{
+    color: #43A047;
+  } @else if $variant == 700{
+    color: #388E3C;
+  } @else if $variant == 800{
+    color: #2E7D32;
+  } @else if $variant == 900{
+    color: #1B5E20;
+  } @else if $variant == A100 or $variant == a100{
+    color: #B9F6CA;
+  } @else if $variant == A200 or $variant == a200{
+    color: #69F0AE;
+  } @else if $variant == A400 or $variant == a400{
+    color: #00E676;
+  } @else if $variant == A700 or $variant == a700{
+    color: #00C853;
+  } @else{
+    color: #4CAF50;
+  }
+}
+//Light green
+@mixin lightGreenText($variant){
+  @if $variant == 50{
+    color: #F1F8E9;
+  } @else if $variant == 100{
+    color: #DCEDC8;
+  } @else if $variant == 200{
+    color: #C5E1A5;
+  } @else if $variant == 300{
+    color: #AED581;
+  } @else if $variant == 400{
+    color: #9CCC65;
+  } @else if $variant == 500{
+    color: #8BC34A;
+  } @else if $variant == 600{
+    color: #7CB342;
+  } @else if $variant == 700{
+    color: #689F38;
+  } @else if $variant == 800{
+    color: #558B2F;
+  } @else if $variant == 900{
+    color: #33691E;
+  } @else if $variant == A100 or $variant == a100{
+    color: #CCFF90;
+  } @else if $variant == A200 or $variant == a200{
+    color: #B2FF59;
+  } @else if $variant == A400 or $variant == a400{
+    color: #76FF03;
+  } @else if $variant == A700 or $variant == a700{
+    color: #64DD17;
+  } @else{
+    color: #8BC34A;
+  }
+}
+//Lime
+@mixin limeText($variant){
+  @if $variant == 50{
+    color: #F9FBE7;
+  } @else if $variant == 100{
+    color: #F0F4C3;
+  } @else if $variant == 200{
+    color: #E6EE9C;
+  } @else if $variant == 300{
+    color: #DCE775;
+  } @else if $variant == 400{
+    color: #D4E157;
+  } @else if $variant == 500{
+    color: #CDDC39;
+  } @else if $variant == 600{
+    color: #C0CA33;
+  } @else if $variant == 700{
+    color: #AFB42B;
+  } @else if $variant == 800{
+    color: #9E9D24;
+  } @else if $variant == 900{
+    color: #827717;
+  } @else if $variant == A100 or $variant == a100{
+    color: #F4FF81;
+  } @else if $variant == A200 or $variant == a200{
+    color: #EEFF41;
+  } @else if $variant == A400 or $variant == a400{
+    color: #C6FF00;
+  } @else if $variant == A700 or $variant == a700{
+    color: #AEEA00;
+  } @else{
+    color: #CDDC39;
+  }
+}
+//Yellow
+@mixin yellowText($variant){
+  @if $variant == 50{
+    color: #FFFDE7;
+  } @else if $variant == 100{
+    color: #FFF9C4;
+  } @else if $variant == 200{
+    color: #FFF59D;
+  } @else if $variant == 300{
+    color: #FFF176;
+  } @else if $variant == 400{
+    color: #FFEE58;
+  } @else if $variant == 500{
+    color: #FFEB3B;
+  } @else if $variant == 600{
+    color: #FDD835;
+  } @else if $variant == 700{
+    color: #FBC02D;
+  } @else if $variant == 800{
+    color: #F9A825;
+  } @else if $variant == 900{
+    color: #F57F17;
+  } @else if $variant == A100 or $variant == a100{
+    color: #FFFF8D;
+  } @else if $variant == A200 or $variant == a200{
+    color: #FFFF00;
+  } @else if $variant == A400 or $variant == a400{
+    color: #FFEA00;
+  } @else if $variant == A700 or $variant == a700{
+    color: #FFD600;
+  } @else{
+    color: #FFEB3B;
+  }
+}
+//Amber
+@mixin amberText($variant){
+  @if $variant == 50{
+    color: #FFF8E1;
+  } @else if $variant == 100{
+    color: #FFECB3;
+  } @else if $variant == 200{
+    color: #FFE082;
+  } @else if $variant == 300{
+    color: #FFD54F;
+  } @else if $variant == 400{
+    color: #FFCA28;
+  } @else if $variant == 500{
+    color: #FFC107;
+  } @else if $variant == 600{
+    color: #FFB300;
+  } @else if $variant == 700{
+    color: #FFA000;
+  } @else if $variant == 800{
+    color: #FF8F00;
+  } @else if $variant == 900{
+    color: #FF6F00;
+  } @else if $variant == A100 or $variant == a100{
+    color: #FFE57F;
+  } @else if $variant == A200 or $variant == a200{
+    color: #FFD740;
+  } @else if $variant == A400 or $variant == a400{
+    color: #FFC400;
+  } @else if $variant == A700 or $variant == a700{
+    color: #FFAB00;
+  } @else{
+    color: #FFC107;
+  }
+}
+//Orange
+@mixin orangeText($variant){
+  @if $variant == 50{
+    color: #FFF3E0;
+  } @else if $variant == 100{
+    color: #FFE0B2;
+  } @else if $variant == 200{
+    color: #FFCC80;
+  } @else if $variant == 300{
+    color: #FFB74D;
+  } @else if $variant == 400{
+    color: #FFA726;
+  } @else if $variant == 500{
+    color: #FF9800;
+  } @else if $variant == 600{
+    color: #FB8C00;
+  } @else if $variant == 700{
+    color: #F57C00;
+  } @else if $variant == 800{
+    color: #EF6C00;
+  } @else if $variant == 900{
+    color: #E65100;
+  } @else if $variant == A100 or $variant == a100{
+    color: #FFD180;
+  } @else if $variant == A200 or $variant == a200{
+    color: #FFAB40;
+  } @else if $variant == A400 or $variant == a400{
+    color: #FF9100;
+  } @else if $variant == A700 or $variant == a700{
+    color: #FF6D00;
+  } @else{
+    color: #FF9800;
+  }
+}
+//Deep orange
+@mixin deepOrangeText($variant){
+  @if $variant == 50{
+    color: #FBE9E7;
+  } @else if $variant == 100{
+    color: #FFCCBC;
+  } @else if $variant == 200{
+    color: #FFAB91;
+  } @else if $variant == 300{
+    color: #FF8A65;
+  } @else if $variant == 400{
+    color: #FF7043;
+  } @else if $variant == 500{
+    color: #FF5722;
+  } @else if $variant == 600{
+    color: #F4511E;
+  } @else if $variant == 700{
+    color: #E64A19;
+  } @else if $variant == 800{
+    color: #D84315;
+  } @else if $variant == 900{
+    color: #BF360C;
+  } @else if $variant == A100 or $variant == a100{
+    color: #FF9E80;
+  } @else if $variant == A200 or $variant == a200{
+    color: #FF6E40;
+  } @else if $variant == A400 or $variant == a400{
+    color: #FF3D00;
+  } @else if $variant == A700 or $variant == a700{
+    color: #DD2C00;
+  } @else{
+    color: #FF5722;
+  }
+}
+//Brown
+@mixin brownText($variant){
+  @if $variant == 50{
+    color: #EFEBE9;
+  } @else if $variant == 100{
+    color: #D7CCC8;
+  } @else if $variant == 200{
+    color: #BCAAA4;
+  } @else if $variant == 300{
+    color: #A1887F;
+  } @else if $variant == 400{
+    color: #8D6E63;
+  } @else if $variant == 500{
+    color: #795548;
+  } @else if $variant == 600{
+    color: #6D4C41;
+  } @else if $variant == 700{
+    color: #5D4037;
+  } @else if $variant == 800{
+    color: #4E342E;
+  } @else if $variant == 900{
+    color: #3E2723;
+  } @else{
+    color: #795548;
+  }
+}
+//Brown
+@mixin greyText($variant){
+  @if $variant == 50{
+    color: #FAFAFA;
+  } @else if $variant == 100{
+    color: #F5F5F5;
+  } @else if $variant == 200{
+    color: #EEEEEE;
+  } @else if $variant == 300{
+    color: #E0E0E0;
+  } @else if $variant == 400{
+    color: #BDBDBD;
+  } @else if $variant == 500{
+    color: #9E9E9E;
+  } @else if $variant == 600{
+    color: #757575;
+  } @else if $variant == 700{
+    color: #616161;
+  } @else if $variant == 800{
+    color: #424242;
+  } @else if $variant == 900{
+    color: #212121;
+  } @else{
+    color: #9E9E9E;
+  }
+}
+//Blue grey
+@mixin blueGreyText($variant){
+  @if $variant == 50{
+    color: #ECEFF1;
+  } @else if $variant == 100{
+    color: #CFD8DC;
+  } @else if $variant == 200{
+    color: #B0BEC5;
+  } @else if $variant == 300{
+    color: #90A4AE;
+  } @else if $variant == 400{
+    color: #78909C;
+  } @else if $variant == 500{
+    color: #607D8B;
+  } @else if $variant == 600{
+    color: #546E7A;
+  } @else if $variant == 700{
+    color: #455A64;
+  } @else if $variant == 800{
+    color: #37474F;
+  } @else if $variant == 900{
+    color: #263238;
+  } @else{
+    color: #607D8B;
+  }
+}
+@mixin blackText{
+  color: black;
+}
+@mixin whiteText{
+  color: white;
+}
