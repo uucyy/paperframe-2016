@@ -119,7 +119,13 @@
           <p>
             This framework is made with the material design guidelines not only as guidelines, but as rules. These pages serve as demo, documentation and instruction pages
           </p>
-          <p>There is currently no download for either version of Paperframe. If you wish to contribute or use Paperframe early, visit the Paperframe repo over on Github</p> 
+          <p>There is currently no download for either version of Paperframe. If you wish to contribute or use Paperframe early, visit the Paperframe repo over on Github</p>
+          </div>
+          <div class="actions">
+            <hr>
+            <button flat onclick="toggleToast()">taskbar</button>
+            <!--<button flat>download scss</button>
+            <button flat>download css</button>-->
           </div>
         </div>
         <div class="card">
@@ -166,6 +172,15 @@
         </div>
       </div>
     </div>
+    <div id="snackbar" class="hidden">
+      <div class="content">
+        This is a snackbar
+        <div class="action">
+          <button flat onclick="toggleSnackbar()">undo</button>
+      </div>
+      </div>
+    </div>
+    <div id="toast">Download started</div>
 </body>
 
 </html>

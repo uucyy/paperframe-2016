@@ -1,4 +1,6 @@
 .sass-cache
+paperframe/paperframe.min.css
+paperframe/paperframe.min.css.map
 scss/_index.scss
 scss/radiobutton_checked.svg
 scss/radiobutton_unchecked.svg

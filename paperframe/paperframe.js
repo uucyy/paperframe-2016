@@ -1,3 +1,7 @@
+// This JavaScript is horrible, but it works. Feel free to rewrite functions
+// if you feel that you can write it better, which you probably can because
+// I am terrible at JavaScript right now.
+
 function toggleDrawer() {
   var theDrawer = document.querySelector("#drawer");
   var theDrawerScrim = document.querySelector("#scrim");
@@ -30,28 +34,55 @@ function toggleToast() {
     $("#toast").toggleClass("show");
   }
 }
-
+var hideSnackbarTimeout;
 function toggleSnackbar() {
   var theSnackbar = document.querySelector("#snackbar");
   var theFab = document.querySelector("#fab");
   if (theSnackbar.classList.contains("hidden")) {
     theSnackbar.classList.remove("hidden");
-    if (theFab.classList.contains("hidden")) {} else {
-      theFab.classList.add("snackbarup");
+    if (theFab === null) {} else {
+      if (theFab.classList.contains("hidden")) {} else {
+        theFab.classList.add("snackbarup");
+      }
     }
-    setTimeout(hideSnackbar, 3000);
+    clearTimeout(hideSnackbarTimeout);
+    hideSnackbarTimeout = setTimeout(hideSnackbar, 3000);
 
     function hideSnackbar() {
       theSnackbar.classList.add("hidden");
-      theFab.classList.remove("snackbarup");
+      if (theFab === null) {} else {
+        theFab.classList.remove("snackbarup");
+      }
     }
   } else {
     theSnackbar.classList.add("hidden");
-    theFab.classList.remove("snackbarup");
+    if (theFab === null) {} else {
+      theFab.classList.remove("snackbarup");
+    }
   }
-  var h = window.screen.width;
-  if (h > 744) {
-    theFab.classList.remove("snackbarup");
+  var w = window.screen.width;
+  if (w > 744) {
+    if (theFab === null) {} else {
+      theFab.classList.remove("snackbarup");
+    }
+  }
+}
+
+var hideToastTimeout;
+function toggleToast(){
+  var theToast = document.querySelector("#toast");
+  if (theToast === null) {} else {
+    if (theToast.classList.contains("show")){
+      theToast.classList.remove("show");
+      setTimeout(toggleToast, 350);
+    } else{
+      theToast.classList.add("show");
+      clearTimeout(hideToastTimeout);
+      hideToastTimeout = setTimeout(hideToast, 3000);
+      function hideToast(){
+        theToast.classList.remove("show");
+      }
+    }
   }
 }
 
