@@ -118,16 +118,19 @@
       <div class="small-12 large-12 columns">
         <div class="card">
           <div class="primarytitle">
-            <h1>Snackbars</h1>
-            <h2>An introduction to snackbars</h2>
+            <h1>Snackbars and toasts</h1>
+            <h2>An introduction to snackbars and toasts</h2>
           </div>
           <div class="supportingtext">
+            <h2>Snackbars</h2> 
             <p>
               Snackbars provide lightweight feedback about an operation by showing a brief message at the bottom of the screen. Snackbars can contain an action.
             </p>
             <p>
               The snackbar action will use the secondary colour defined in your SCSS colours file, located in /scss/import/colours.scss
             </p>
+            <h2>Toasts</h2>
+            <p>Toasts are similar to snackbars but do not contain actions and cannot be dismissed manually.</p>
           </div>
           <div class="actions">
             <hr>
@@ -139,9 +142,10 @@
           <div class="primarytitle">
             <h1>Code</h1>
           </div>
-          <div class="supportingtext">
-            <h2>HTML</h2>
-            <p>The snackbar is called using the toggleSnackbar() function. The snackbar must manually be added to the page, beneath everything in the HTML document but above the closing body tag.
+          <div class="supportingtext" style="padding-bottom: 0;">
+            <h2>Snackbars</h2>
+            <p>The snackbar is called using the toggleSnackbar() function. The snackbar must manually be added to the page, beneath everything in the HTML document but above the closing body tag.</p>
+            <h3>HTML</h3>
           </div>
             <pre>
               <code class="html">
@@ -153,6 +157,16 @@
     &lt;/div>
   &lt;/div>
 &lt;/div>
+              </code>
+            </pre>
+            <div class="supportingtext" style="padding-bottom: 0;">
+              <h3>Toasts</h3>
+              <p>Toats are called using the toggleToast() function. Toasts must manually be added to the page, beneath everything in the HTML document but above the closing body tag.</p>
+              <h3>HTML</h3>
+            </div>
+            <pre>
+              <code class="html">
+&lt;span id="toast">This is a toast&lt;/span>
               </code>
             </pre>
           </div>
