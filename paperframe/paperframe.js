@@ -26,18 +26,15 @@ function toggleFab() {
   }
 }
 
-function toggleToast() {
-  $("#toast").toggleClass("show");
-  setTimeout(hideToast, 3000);
-
-  function hideToast() {
-    $("#toast").toggleClass("show");
-  }
-}
 var hideSnackbarTimeout;
+
 function toggleSnackbar() {
   var theSnackbar = document.querySelector("#snackbar");
   var theFab = document.querySelector("#fab");
+  var theToast = document.querySelector("#toast");
+  if (theToast.classList.contains("show")) {
+    theToast.classList.add("snackbarup");
+  }
   if (theSnackbar.classList.contains("hidden")) {
     theSnackbar.classList.remove("hidden");
     if (theFab === null) {} else {
@@ -50,6 +47,9 @@ function toggleSnackbar() {
 
     function hideSnackbar() {
       theSnackbar.classList.add("hidden");
+      if (theToast.classList.contains("snackbarup")) {
+        theToast.classList.remove("snackbarup");
+      }
       if (theFab === null) {} else {
         theFab.classList.remove("snackbarup");
       }
@@ -69,18 +69,27 @@ function toggleSnackbar() {
 }
 
 var hideToastTimeout;
-function toggleToast(){
+
+function toggleToast() {
   var theToast = document.querySelector("#toast");
   if (theToast === null) {} else {
-    if (theToast.classList.contains("show")){
+    if (theToast.classList.contains("show")) {
       theToast.classList.remove("show");
       setTimeout(toggleToast, 350);
-    } else{
+    } else {
+      var theSnackbar = document.querySelector("#snackbar");
+      if (theSnackbar.classList.contains("hidden")) {} else {
+        theToast.classList.add("snackbarup");
+      }
       theToast.classList.add("show");
       clearTimeout(hideToastTimeout);
       hideToastTimeout = setTimeout(hideToast, 3000);
-      function hideToast(){
+
+      function hideToast() {
         theToast.classList.remove("show");
+        if (theToast.classList.contains("snackbarup")) {
+          theToast.classList.remove("snackbarup");
+        }
       }
     }
   }

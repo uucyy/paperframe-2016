@@ -83,6 +83,12 @@
           <span>Colour</span>
         </li>
       </a>
+      <a href="snackbarsandtoasts.html">
+        <li>
+          <i class="material-icons">perm_device_information</i>
+          <span>Snackbars and toasts</span>
+        </li>
+      </a>
       <hr>
       <h2>Resources</h2>
       <a href="https://www.google.com/design/spec/material-design/introduction.html">
@@ -192,8 +198,48 @@
 &lt;i class="material-icons">info&lt;/i>
                 </code>
               </pre>
-              <div class="supportingtext">
+              <div class="supportingtext" style="padding-bottom: 0;">
                 <p>To add an icon to a drawer item, simply add the previous code before the span tag. The full list of usable icons are available <a href="https://design.google.com/icons/">here</a></p>
+                <h2>User personalisation</h2>
+                <p>The drawer in material design quite often includes a header to display information about the currently logged in user, such as their name, email address, an avatar and a header image. Optionally, you can remove the header from the drawer completely. To remove the header, remove the following code from the drawer.</p>
+              </div>
+              <pre>
+                <code class="html">
+&lt;div class="header">
+  &lt;div class="user">
+    &lt;div class="avatar">&lt;/div>
+    &lt;div class="name">First Last&lt;/div>
+    &lt;div class="email">email@email.com&lt;/div>
+  &lt;/div>
+&lt;/div>
+                </code>
+              </pre>
+              <div class="supportingtext" style="padding-bottom: 0;">
+                <h3>Header image</h3>
+                <p>To add a custom header image to the header in the drawer:</p>
+              </div>
+              <pre>
+                <code class="html">
+&lt;div class="header" style="background-image: url(example.png);">
+&lt;/div>
+                </code>
+              </pre>
+              <div class="supportingtext" style="padding-bottom: 0;">
+                <h3>User avatar</h3>
+                <p>To add a custom image for the avatar:</p>
+              </div>
+              <pre>
+                <code class="html">
+&lt;div class="header">
+  &lt;div class="user">
+    &lt;div class="avatar" style="background-image: url(example.png);">&lt;/div>
+  &lt;/div>
+&lt;/div>
+                </code>
+              </pre>
+              <div class="supportingtext">
+                <h3>User information</h3>
+                <p>To begin with, the user's name and their email are displayed in the header. While the class name indicates that they are these, you can put any information you desire.</p>
               </div>
           </div>
           </div>

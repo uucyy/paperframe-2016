@@ -6,6 +6,1012 @@ $secondaryText: lighten($base, 46%);
 $disabledText: lighten($base, 62%);
 $divider: lighten($base, 88%);
 
+//Colour standard CSS/HTML
+
+//Red
+.red{
+  background: #F44336 !important;
+  &50{
+    background: #FFEBEE !important;
+  }
+  &100{
+    background: #FFCDD2 !important;
+  }
+  &200{
+    background: #EF9A9A !important;
+  }
+  &300{
+    background: #E57373 !important;
+  }
+  &400{
+    background: #EF5350 !important;
+  }
+  &500{
+    background: #F44336 !important;
+  }
+  &600{
+    background: #E53935 !important;
+  }
+  &700{
+    background: #D32F2F !important;
+  }
+  &800{
+    background: #C62828 !important;
+  }
+  &900{
+    background: #B71C1C !important;
+  }
+  &a100{
+    background: #FF8A80 !important;
+  }
+  &A100{
+    background: #FF8A80 !important;
+  }
+  &a200{
+    background: #FF5252 !important;
+  }
+  &A200{
+    background: #FF5252 !important;
+  }
+  &a400{
+    background: #FF1744 !important;
+  }
+  &A400{
+    background: #FF1744 !important;
+  }
+  &a700{
+    background: #D50000 !important;
+  }
+  &A700{
+    background: #D50000 !important;
+  }
+}
+//Pink
+.pink{
+  background: #E91E63 !important;
+  &50{
+    background: #FCE4EC !important;
+  }
+  &100{
+    background: #F8BBD0 !important;
+  }
+  &200{
+    background: #F48FB1 !important;
+  }
+  &300{
+    background: #F06292 !important;
+  }
+  &400{
+    background: #EC407A !important;
+  }
+  &500{
+    background: #E91E63 !important;
+  }
+  &600{
+    background: #D81B60 !important;
+  }
+  &700{
+    background: #C2185B !important;
+  }
+  &800{
+    background: #AD1457 !important;
+  }
+  &900{
+    background: #880E4F !important;
+  }
+  &a100{
+    background: #FF80AB !important;
+  }
+  &A100{
+    background: #FF80AB !important;
+  }
+  &a200{
+    background: #FF4081 !important;
+  }
+  &A200{
+    background: #FF4081 !important;
+  }
+  &a400{
+    background: #F50057 !important;
+  }
+  &A400{
+    background: #F50057 !important;
+  }
+  &a700{
+    background: #C51162 !important;
+  }
+  &A700{
+    background: #C51162 !important;
+  }
+}
+//Purple
+.purple{
+  background: #9C27B0 !important;
+  &50{
+    background: #F3E5F5 !important;
+  }
+  &100{
+    background: #E1BEE7 !important;
+  }
+  &200{
+    background: #CE93D8 !important;
+  }
+  &300{
+    background: #BA68C8 !important;
+  }
+  &400{
+    background: #AB47BC !important;
+  }
+  &500{
+    background: #9C27B0 !important;
+  }
+  &600{
+    background: #8E24AA !important;
+  }
+  &700{
+    background: #7B1FA2 !important;
+  }
+  &800{
+    background: #6A1B9A !important;
+  }
+  &900{
+    background: #4A148C !important;
+  }
+  &a100{
+    background: #EA80FC !important;
+  }
+  &A100{
+    background: #EA80FC !important;
+  }
+  &a200{
+    background: #E040FB !important;
+  }
+  &A200{
+    background: #E040FB !important;
+  }
+  &a400{
+    background: #D500F9 !important;
+  }
+  &A400{
+    background: #D500F9 !important;
+  }
+  &a700{
+    background: #AA00FF !important;
+  }
+  &A700{
+    background: #AA00FF !important;
+  }
+}
+//Deep purple
+.deepPurple{
+  background: #673AB7 !important;
+  &50{
+    background: #EDE7F6 !important;
+  }
+  &100{
+    background: #D1C4E9 !important;
+  }
+  &200{
+    background: #B39DDB !important;
+  }
+  &300{
+    background: #9575CD !important;
+  }
+  &400{
+    background: #7E57C2 !important;
+  }
+  &500{
+    background: #673AB7 !important;
+  }
+  &600{
+    background: #5E35B1 !important;
+  }
+  &700{
+    background: #512DA8 !important;
+  }
+  &800{
+    background: #4527A0 !important;
+  }
+  &900{
+    background: #311B92 !important;
+  }
+  &a100{
+    background: #B388FF !important;
+  }
+  &A100{
+    background: #B388FF !important;
+  }
+  &a200{
+    background: #7C4DFF !important;
+  }
+  &A200{
+    background: #7C4DFF !important;
+  }
+  &a400{
+    background: #651FFF !important;
+  }
+  &A400{
+    background: #651FFF !important;
+  }
+  &a700{
+    background: #6200EA !important;
+  }
+  &A700{
+    background: #6200EA !important;
+  }
+}
+.deeppurple{
+  @extend .deepPurple;
+}
+//Indigo
+.indigo{
+  background: #3F51B5 !important;
+  &50{
+    background: #E8EAF6 !important;
+  }
+  &100{
+    background: #C5CAE9 !important;
+  }
+  &200{
+    background: #9FA8DA !important;
+  }
+  &300{
+    background: #7986CB !important;
+  }
+  &400{
+    background: #5C6BC0 !important;
+  }
+  &500{
+    background: #3F51B5 !important;
+  }
+  &600{
+    background: #3949AB !important;
+  }
+  &700{
+    background: #303F9F !important;
+  }
+  &800{
+    background: #283593 !important;
+  }
+  &900{
+    background: #1A237E !important;
+  }
+  &a100{
+    background: #8C9EFF !important;
+  }
+  &A100{
+    background: #8C9EFF !important;
+  }
+  &a200{
+    background: #7C4DFF !important;
+  }
+  &A200{
+    background: #536DFE !important;
+  }
+  &a400{
+    background: #3D5AFE !important;
+  }
+  &A400{
+    background: #3D5AFE !important;
+  }
+  &a700{
+    background: #304FFE !important;
+  }
+  &A700{
+    background: #304FFE !important;
+  }
+}
+//Blue
+.blue{
+  background: #2196F3 !important;
+  &50{
+    background: #E3F2FD !important;
+  }
+  &100{
+    background: #BBDEFB !important;
+  }
+  &200{
+    background: #90CAF9 !important;
+  }
+  &300{
+    background: #64B5F6 !important;
+  }
+  &400{
+    background: #42A5F5 !important;
+  }
+  &500{
+    background: #2196F3 !important;
+  }
+  &600{
+    background: #1E88E5 !important;
+  }
+  &700{
+    background: #1976D2 !important;
+  }
+  &800{
+    background: #1565C0 !important;
+  }
+  &900{
+    background: #0D47A1 !important;
+  }
+  &a100{
+    background: #82B1FF !important;
+  }
+  &A100{
+    background: #82B1FF !important;
+  }
+  &a200{
+    background: #448AFF !important;
+  }
+  &A200{
+    background: #448AFF !important;
+  }
+  &a400{
+    background: #2979FF !important;
+  }
+  &A400{
+    background: #2979FF !important;
+  }
+  &a700{
+    background: #2962FF !important;
+  }
+  &A700{
+    background: #2962FF !important;
+  }
+}
+//Light blue
+.lightBlue{
+  background: #03A9F4 !important;
+  &50{
+    background: #E1F5FE !important;
+  }
+  &100{
+    background: #B3E5FC !important;
+  }
+  &200{
+    background: #81D4FA !important;
+  }
+  &300{
+    background: #4FC3F7 !important;
+  }
+  &400{
+    background: #29B6F6 !important;
+  }
+  &500{
+    background: #03A9F4 !important;
+  }
+  &600{
+    background: #039BE5 !important;
+  }
+  &700{
+    background: #0288D1 !important;
+  }
+  &800{
+    background: #0277BD !important;
+  }
+  &900{
+    background: #01579B !important;
+  }
+  &a100{
+    background: #80D8FF !important;
+  }
+  &A100{
+    background: #80D8FF !important;
+  }
+  &a200{
+    background: #40C4FF !important;
+  }
+  &A200{
+    background: #40C4FF !important;
+  }
+  &a400{
+    background: #00B0FF !important;
+  }
+  &A400{
+    background: #00B0FF !important;
+  }
+  &a700{
+    background: #0091EA !important;
+  }
+  &A700{
+    background: #0091EA !important;
+  }
+}
+.lightblue{
+  @extend .lightBlue;
+}
+//Teal
+.teal{
+  background: #009688 !important;
+  &50{
+    background: #E0F2F1 !important;
+  }
+  &100{
+    background: #B2DFDB !important;
+  }
+  &200{
+    background: #80CBC4 !important;
+  }
+  &300{
+    background: #4DB6AC !important;
+  }
+  &400{
+    background: #26A69A !important;
+  }
+  &500{
+    background: #009688 !important;
+  }
+  &600{
+    background: #00897B !important;
+  }
+  &700{
+    background: #00796B !important;
+  }
+  &800{
+    background: #00695C !important;
+  }
+  &900{
+    background: #004D40 !important;
+  }
+  &a100{
+    background: #A7FFEB !important;
+  }
+  &A100{
+    background: #A7FFEB !important;
+  }
+  &a200{
+    background: #64FFDA !important;
+  }
+  &A200{
+    background: #64FFDA !important;
+  }
+  &a400{
+    background: #1DE9B6 !important;
+  }
+  &A400{
+    background: #1DE9B6 !important;
+  }
+  &a700{
+    background: #00BFA5 !important;
+  }
+  &A700{
+    background: #00BFA5 !important;
+  }
+}
+//Green
+.green{
+  background: #4CAF50 !important;
+  &50{
+    background: #E8F5E9 !important;
+  }
+  &100{
+    background: #C8E6C9 !important;
+  }
+  &200{
+    background: #A5D6A7 !important;
+  }
+  &300{
+    background: #81C784 !important;
+  }
+  &400{
+    background: #66BB6A !important;
+  }
+  &500{
+    background: #4CAF50 !important;
+  }
+  &600{
+    background: #43A047 !important;
+  }
+  &700{
+    background: #388E3C !important;
+  }
+  &800{
+    background: #2E7D32 !important;
+  }
+  &900{
+    background: #1B5E20 !important;
+  }
+  &a100{
+    background: #B9F6CA !important;
+  }
+  &A100{
+    background: #B9F6CA !important;
+  }
+  &a200{
+    background: #69F0AE !important;
+  }
+  &A200{
+    background: #69F0AE !important;
+  }
+  &a400{
+    background: #00E676 !important;
+  }
+  &A400{
+    background: #00E676 !important;
+  }
+  &a700{
+    background: #00C853 !important;
+  }
+  &A700{
+    background: #00C853 !important;
+  }
+}
+//Light green
+.lightGreen{
+  background: #8BC34A !important;
+  &50{
+    background: #F1F8E9 !important;
+  }
+  &100{
+    background: #DCEDC8 !important;
+  }
+  &200{
+    background: #C5E1A5 !important;
+  }
+  &300{
+    background: #AED581 !important;
+  }
+  &400{
+    background: #9CCC65 !important;
+  }
+  &500{
+    background: #8BC34A !important;
+  }
+  &600{
+    background: #7CB342 !important;
+  }
+  &700{
+    background: #689F38 !important;
+  }
+  &800{
+    background: #558B2F !important;
+  }
+  &900{
+    background: #33691E !important;
+  }
+  &a100{
+    background: #CCFF90 !important;
+  }
+  &A100{
+    background: #CCFF90 !important;
+  }
+  &a200{
+    background: #B2FF59 !important;
+  }
+  &A200{
+    background: #B2FF59 !important;
+  }
+  &a400{
+    background: #76FF03 !important;
+  }
+  &A400{
+    background: #76FF03 !important;
+  }
+  &a700{
+    background: #64DD17 !important;
+  }
+  &A700{
+    background: #64DD17 !important;
+  }
+}
+.lightgreen{
+  @extend .lightGreen;
+}
+//Lime
+.lime{
+  background: #CDDC39 !important;
+  &50{
+    background: #F9FBE7 !important;
+  }
+  &100{
+    background: #F0F4C3 !important;
+  }
+  &200{
+    background: #E6EE9C !important;
+  }
+  &300{
+    background: #DCE775 !important;
+  }
+  &400{
+    background: #D4E157 !important;
+  }
+  &500{
+    background: #CDDC39 !important;
+  }
+  &600{
+    background: #C0CA33 !important;
+  }
+  &700{
+    background: #AFB42B !important;
+  }
+  &800{
+    background: #9E9D24 !important;
+  }
+  &900{
+    background: #827717 !important;
+  }
+  &a100{
+    background: #F4FF81 !important;
+  }
+  &A100{
+    background: #F4FF81 !important;
+  }
+  &a200{
+    background: #EEFF41 !important;
+  }
+  &A200{
+    background: #EEFF41 !important;
+  }
+  &a400{
+    background: #C6FF00 !important;
+  }
+  &A400{
+    background: #C6FF00 !important;
+  }
+  &a700{
+    background: #AEEA00 !important;
+  }
+  &A700{
+    background: #AEEA00 !important;
+  }
+}
+//Yellow
+.yellow{
+  background: #FFEB3B !important;
+  &50{
+    background: #FFFDE7 !important;
+  }
+  &100{
+    background: #FFF9C4 !important;
+  }
+  &200{
+    background: #FFF59D !important;
+  }
+  &300{
+    background: #FFF176 !important;
+  }
+  &400{
+    background: #FFEE58 !important;
+  }
+  &500{
+    background: #FFEB3B !important;
+  }
+  &600{
+    background: #FDD835 !important;
+  }
+  &700{
+    background: #FBC02D !important;
+  }
+  &800{
+    background: #F9A825 !important;
+  }
+  &900{
+    background: #F57F17 !important;
+  }
+  &a100{
+    background: #FFFF8D !important;
+  }
+  &A100{
+    background: #FFFF8D !important;
+  }
+  &a200{
+    background: #FFFF00 !important;
+  }
+  &A200{
+    background: #FFFF00 !important;
+  }
+  &a400{
+    background: #FFEA00 !important;
+  }
+  &A400{
+    background: #FFEA00 !important;
+  }
+  &a700{
+    background: #FFD600 !important;
+  }
+  &A700{
+    background: #FFD600 !important;
+  }
+}
+//Amber
+.amber{
+  background: #FFC107 !important;
+  &50{
+    background: #FFF8E1 !important;
+  }
+  &100{
+    background: #FFECB3 !important;
+  }
+  &200{
+    background: #FFE082 !important;
+  }
+  &300{
+    background: #FFD54F !important;
+  }
+  &400{
+    background: #FFCA28 !important;
+  }
+  &500{
+    background: #FFC107 !important;
+  }
+  &600{
+    background: #FFB300 !important;
+  }
+  &700{
+    background: #FFA000 !important;
+  }
+  &800{
+    background: #FF8F00 !important;
+  }
+  &900{
+    background: #FF6F00 !important;
+  }
+  &a100{
+    background: #FFE57F !important;
+  }
+  &A100{
+    background: #FFE57F !important;
+  }
+  &a200{
+    background: #FFD740 !important;
+  }
+  &A200{
+    background: #FFD740 !important;
+  }
+  &a400{
+    background: #FFC400 !important;
+  }
+  &A400{
+    background: #FFC400 !important;
+  }
+  &a700{
+    background: #FFAB00 !important;
+  }
+  &A700{
+    background: #FFAB00 !important;
+  }
+}
+//Orange
+.orange{
+  background: #FF9800 !important;
+  &50{
+    background: #FFF3E0 !important;
+  }
+  &100{
+    background: #FFE0B2 !important;
+  }
+  &200{
+    background: #FFCC80 !important;
+  }
+  &300{
+    background: #FFB74D !important;
+  }
+  &400{
+    background: #FFA726 !important;
+  }
+  &500{
+    background: #FF9800 !important;
+  }
+  &600{
+    background: #FB8C00 !important;
+  }
+  &700{
+    background: #F57C00 !important;
+  }
+  &800{
+    background: #EF6C00 !important;
+  }
+  &900{
+    background: #E65100 !important;
+  }
+  &a100{
+    background: #FFD180 !important;
+  }
+  &A100{
+    background: #FFD180 !important;
+  }
+  &a200{
+    background: #FFAB40 !important;
+  }
+  &A200{
+    background: #FFAB40 !important;
+  }
+  &a400{
+    background: #FF9100 !important;
+  }
+  &A400{
+    background: #FF9100 !important;
+  }
+  &a700{
+    background: #FF6D00 !important;
+  }
+  &A700{
+    background: #FF6D00 !important;
+  }
+}
+//Deep Orange
+.deepOrange{
+  background: #FF5722 !important;
+  &50{
+    background: #FBE9E7 !important;
+  }
+  &100{
+    background: #FFCCBC !important;
+  }
+  &200{
+    background: #FFAB91 !important;
+  }
+  &300{
+    background: #FF8A65 !important;
+  }
+  &400{
+    background: #FF7043 !important;
+  }
+  &500{
+    background: #FF5722 !important;
+  }
+  &600{
+    background: #F4511E !important;
+  }
+  &700{
+    background: #E64A19 !important;
+  }
+  &800{
+    background: #D84315 !important;
+  }
+  &900{
+    background: #BF360C !important;
+  }
+  &a100{
+    background: #FF9E80 !important;
+  }
+  &A100{
+    background: #FF9E80 !important;
+  }
+  &a200{
+    background: #FF6E40 !important;
+  }
+  &A200{
+    background: #FF6E40 !important;
+  }
+  &a400{
+    background: #FF3D00 !important;
+  }
+  &A400{
+    background: #FF3D00 !important;
+  }
+  &a700{
+    background: #DD2C00 !important;
+  }
+  &A700{
+    background: #DD2C00 !important;
+  }
+}
+.deeporange{
+  @extend .deepOrange
+}
+//Brown
+.brown{
+  background: #795548 !important;
+  &50{
+    background: #EFEBE9 !important;
+  }
+  &100{
+    background: #D7CCC8 !important;
+  }
+  &200{
+    background: #BCAAA4 !important;
+  }
+  &300{
+    background: #A1887F !important;
+  }
+  &400{
+    background: #8D6E63 !important;
+  }
+  &500{
+    background: #795548 !important;
+  }
+  &600{
+    background: #6D4C41 !important;
+  }
+  &700{
+    background: #5D4037 !important;
+  }
+  &800{
+    background: #4E342E !important;
+  }
+  &900{
+    background: #3E2723 !important;
+  }
+}
+//Grey
+.grey{
+  background: #9E9E9E !important;
+  &50{
+    background: #FAFAFA !important;
+  }
+  &100{
+    background: #F5F5F5 !important;
+  }
+  &200{
+    background: #EEEEEE !important;
+  }
+  &300{
+    background: #E0E0E0 !important;
+  }
+  &400{
+    background: #BDBDBD !important;
+  }
+  &500{
+    background: #9E9E9E !important;
+  }
+  &600{
+    background: #757575 !important;
+  }
+  &700{
+    background: #616161 !important;
+  }
+  &800{
+    background: #424242 !important;
+  }
+  &900{
+    background: #212121 !important;
+  }
+}
+.gray{
+  @extend .grey;
+}
+//Blue grey
+.blueGrey{
+  background: #607D8B !important;
+  &50{
+    background: #ECEFF1 !important;
+  }
+  &100{
+    background: #CFD8DC !important;
+  }
+  &200{
+    background: #B0BEC5 !important;
+  }
+  &300{
+    background: #90A4AE !important;
+  }
+  &400{
+    background: #78909C !important;
+  }
+  &500{
+    background: #607D8B !important;
+  }
+  &600{
+    background: #546E7A !important;
+  }
+  &700{
+    background: #455A64 !important;
+  }
+  &800{
+    background: #37474F !important;
+  }
+  &900{
+    background: #263238 !important;
+  }
+}
+.bluegrey{
+  @extend .blueGrey;
+}
+.bluegray{
+  @extend .bluegrey;
+}
+.blueGray{
+  @extend .bluegrey;
+}
+.black{
+  background: #000000 !important;
+}
+.white{
+  background: #ffffff !important;
+}
+
+//Colour mixins
 //Red
 @mixin red($variant){
   @if $variant == 50{
@@ -1261,4 +2267,1006 @@ $divider: lighten($base, 88%);
 }
 @mixin whiteText{
   color: white;
+}
+//Red
+.redText{
+  color: #F44336 !important;
+  &50{
+    color: #FFEBEE !important;
+  }
+  &100{
+    color: #FFCDD2 !important;
+  }
+  &200{
+    color: #EF9A9A !important;
+  }
+  &300{
+    color: #E57373 !important;
+  }
+  &400{
+    color: #EF5350 !important;
+  }
+  &500{
+    color: #F44336 !important;
+  }
+  &600{
+    color: #E53935 !important;
+  }
+  &700{
+    color: #D32F2F !important;
+  }
+  &800{
+    color: #C62828 !important;
+  }
+  &900{
+    color: #B71C1C !important;
+  }
+  &a100{
+    color: #FF8A80 !important;
+  }
+  &A100{
+    color: #FF8A80 !important;
+  }
+  &a200{
+    color: #FF5252 !important;
+  }
+  &A200{
+    color: #FF5252 !important;
+  }
+  &a400{
+    color: #FF1744 !important;
+  }
+  &A400{
+    color: #FF1744 !important;
+  }
+  &a700{
+    color: #D50000 !important;
+  }
+  &A700{
+    color: #D50000 !important;
+  }
+}
+//Pink
+.pinkText{
+  color: #E91E63 !important;
+  &50{
+    color: #FCE4EC !important;
+  }
+  &100{
+    color: #F8BBD0 !important;
+  }
+  &200{
+    color: #F48FB1 !important;
+  }
+  &300{
+    color: #F06292 !important;
+  }
+  &400{
+    color: #EC407A !important;
+  }
+  &500{
+    color: #E91E63 !important;
+  }
+  &600{
+    color: #D81B60 !important;
+  }
+  &700{
+    color: #C2185B !important;
+  }
+  &800{
+    color: #AD1457 !important;
+  }
+  &900{
+    color: #880E4F !important;
+  }
+  &a100{
+    color: #FF80AB !important;
+  }
+  &A100{
+    color: #FF80AB !important;
+  }
+  &a200{
+    color: #FF4081 !important;
+  }
+  &A200{
+    color: #FF4081 !important;
+  }
+  &a400{
+    color: #F50057 !important;
+  }
+  &A400{
+    color: #F50057 !important;
+  }
+  &a700{
+    color: #C51162 !important;
+  }
+  &A700{
+    color: #C51162 !important;
+  }
+}
+//Purple
+.purpleText{
+  color: #9C27B0 !important;
+  &50{
+    color: #F3E5F5 !important;
+  }
+  &100{
+    color: #E1BEE7 !important;
+  }
+  &200{
+    color: #CE93D8 !important;
+  }
+  &300{
+    color: #BA68C8 !important;
+  }
+  &400{
+    color: #AB47BC !important;
+  }
+  &500{
+    color: #9C27B0 !important;
+  }
+  &600{
+    color: #8E24AA !important;
+  }
+  &700{
+    color: #7B1FA2 !important;
+  }
+  &800{
+    color: #6A1B9A !important;
+  }
+  &900{
+    color: #4A148C !important;
+  }
+  &a100{
+    color: #EA80FC !important;
+  }
+  &A100{
+    color: #EA80FC !important;
+  }
+  &a200{
+    color: #E040FB !important;
+  }
+  &A200{
+    color: #E040FB !important;
+  }
+  &a400{
+    color: #D500F9 !important;
+  }
+  &A400{
+    color: #D500F9 !important;
+  }
+  &a700{
+    color: #AA00FF !important;
+  }
+  &A700{
+    color: #AA00FF !important;
+  }
+}
+//Deep purple
+.deepPurpleText{
+  color: #673AB7 !important;
+  &50{
+    color: #EDE7F6 !important;
+  }
+  &100{
+    color: #D1C4E9 !important;
+  }
+  &200{
+    color: #B39DDB !important;
+  }
+  &300{
+    color: #9575CD !important;
+  }
+  &400{
+    color: #7E57C2 !important;
+  }
+  &500{
+    color: #673AB7 !important;
+  }
+  &600{
+    color: #5E35B1 !important;
+  }
+  &700{
+    color: #512DA8 !important;
+  }
+  &800{
+    color: #4527A0 !important;
+  }
+  &900{
+    color: #311B92 !important;
+  }
+  &a100{
+    color: #B388FF !important;
+  }
+  &A100{
+    color: #B388FF !important;
+  }
+  &a200{
+    color: #7C4DFF !important;
+  }
+  &A200{
+    color: #7C4DFF !important;
+  }
+  &a400{
+    color: #651FFF !important;
+  }
+  &A400{
+    color: #651FFF !important;
+  }
+  &a700{
+    color: #6200EA !important;
+  }
+  &A700{
+    color: #6200EA !important;
+  }
+}
+.deeppurpleText{
+  @extend .deepPurple;
+}
+//Indigo
+.indigoText{
+  color: #3F51B5 !important;
+  &50{
+    color: #E8EAF6 !important;
+  }
+  &100{
+    color: #C5CAE9 !important;
+  }
+  &200{
+    color: #9FA8DA !important;
+  }
+  &300{
+    color: #7986CB !important;
+  }
+  &400{
+    color: #5C6BC0 !important;
+  }
+  &500{
+    color: #3F51B5 !important;
+  }
+  &600{
+    color: #3949AB !important;
+  }
+  &700{
+    color: #303F9F !important;
+  }
+  &800{
+    color: #283593 !important;
+  }
+  &900{
+    color: #1A237E !important;
+  }
+  &a100{
+    color: #8C9EFF !important;
+  }
+  &A100{
+    color: #8C9EFF !important;
+  }
+  &a200{
+    color: #7C4DFF !important;
+  }
+  &A200{
+    color: #536DFE !important;
+  }
+  &a400{
+    color: #3D5AFE !important;
+  }
+  &A400{
+    color: #3D5AFE !important;
+  }
+  &a700{
+    color: #304FFE !important;
+  }
+  &A700{
+    color: #304FFE !important;
+  }
+}
+//Blue
+.blueText{
+  color: #2196F3 !important;
+  &50{
+    color: #E3F2FD !important;
+  }
+  &100{
+    color: #BBDEFB !important;
+  }
+  &200{
+    color: #90CAF9 !important;
+  }
+  &300{
+    color: #64B5F6 !important;
+  }
+  &400{
+    color: #42A5F5 !important;
+  }
+  &500{
+    color: #2196F3 !important;
+  }
+  &600{
+    color: #1E88E5 !important;
+  }
+  &700{
+    color: #1976D2 !important;
+  }
+  &800{
+    color: #1565C0 !important;
+  }
+  &900{
+    color: #0D47A1 !important;
+  }
+  &a100{
+    color: #82B1FF !important;
+  }
+  &A100{
+    color: #82B1FF !important;
+  }
+  &a200{
+    color: #448AFF !important;
+  }
+  &A200{
+    color: #448AFF !important;
+  }
+  &a400{
+    color: #2979FF !important;
+  }
+  &A400{
+    color: #2979FF !important;
+  }
+  &a700{
+    color: #2962FF !important;
+  }
+  &A700{
+    color: #2962FF !important;
+  }
+}
+//Light blue
+.lightBlueText{
+  color: #03A9F4 !important;
+  &50{
+    color: #E1F5FE !important;
+  }
+  &100{
+    color: #B3E5FC !important;
+  }
+  &200{
+    color: #81D4FA !important;
+  }
+  &300{
+    color: #4FC3F7 !important;
+  }
+  &400{
+    color: #29B6F6 !important;
+  }
+  &500{
+    color: #03A9F4 !important;
+  }
+  &600{
+    color: #039BE5 !important;
+  }
+  &700{
+    color: #0288D1 !important;
+  }
+  &800{
+    color: #0277BD !important;
+  }
+  &900{
+    color: #01579B !important;
+  }
+  &a100{
+    color: #80D8FF !important;
+  }
+  &A100{
+    color: #80D8FF !important;
+  }
+  &a200{
+    color: #40C4FF !important;
+  }
+  &A200{
+    color: #40C4FF !important;
+  }
+  &a400{
+    color: #00B0FF !important;
+  }
+  &A400{
+    color: #00B0FF !important;
+  }
+  &a700{
+    color: #0091EA !important;
+  }
+  &A700{
+    color: #0091EA !important;
+  }
+}
+.lightblueText{
+  @extend .lightBlue;
+}
+//Teal
+.tealText{
+  color: #009688 !important;
+  &50{
+    color: #E0F2F1 !important;
+  }
+  &100{
+    color: #B2DFDB !important;
+  }
+  &200{
+    color: #80CBC4 !important;
+  }
+  &300{
+    color: #4DB6AC !important;
+  }
+  &400{
+    color: #26A69A !important;
+  }
+  &500{
+    color: #009688 !important;
+  }
+  &600{
+    color: #00897B !important;
+  }
+  &700{
+    color: #00796B !important;
+  }
+  &800{
+    color: #00695C !important;
+  }
+  &900{
+    color: #004D40 !important;
+  }
+  &a100{
+    color: #A7FFEB !important;
+  }
+  &A100{
+    color: #A7FFEB !important;
+  }
+  &a200{
+    color: #64FFDA !important;
+  }
+  &A200{
+    color: #64FFDA !important;
+  }
+  &a400{
+    color: #1DE9B6 !important;
+  }
+  &A400{
+    color: #1DE9B6 !important;
+  }
+  &a700{
+    color: #00BFA5 !important;
+  }
+  &A700{
+    color: #00BFA5 !important;
+  }
+}
+//Green
+.greenText{
+  color: #4CAF50 !important;
+  &50{
+    color: #E8F5E9 !important;
+  }
+  &100{
+    color: #C8E6C9 !important;
+  }
+  &200{
+    color: #A5D6A7 !important;
+  }
+  &300{
+    color: #81C784 !important;
+  }
+  &400{
+    color: #66BB6A !important;
+  }
+  &500{
+    color: #4CAF50 !important;
+  }
+  &600{
+    color: #43A047 !important;
+  }
+  &700{
+    color: #388E3C !important;
+  }
+  &800{
+    color: #2E7D32 !important;
+  }
+  &900{
+    color: #1B5E20 !important;
+  }
+  &a100{
+    color: #B9F6CA !important;
+  }
+  &A100{
+    color: #B9F6CA !important;
+  }
+  &a200{
+    color: #69F0AE !important;
+  }
+  &A200{
+    color: #69F0AE !important;
+  }
+  &a400{
+    color: #00E676 !important;
+  }
+  &A400{
+    color: #00E676 !important;
+  }
+  &a700{
+    color: #00C853 !important;
+  }
+  &A700{
+    color: #00C853 !important;
+  }
+}
+//Light green
+.lightGreenText{
+  color: #8BC34A !important;
+  &50{
+    color: #F1F8E9 !important;
+  }
+  &100{
+    color: #DCEDC8 !important;
+  }
+  &200{
+    color: #C5E1A5 !important;
+  }
+  &300{
+    color: #AED581 !important;
+  }
+  &400{
+    color: #9CCC65 !important;
+  }
+  &500{
+    color: #8BC34A !important;
+  }
+  &600{
+    color: #7CB342 !important;
+  }
+  &700{
+    color: #689F38 !important;
+  }
+  &800{
+    color: #558B2F !important;
+  }
+  &900{
+    color: #33691E !important;
+  }
+  &a100{
+    color: #CCFF90 !important;
+  }
+  &A100{
+    color: #CCFF90 !important;
+  }
+  &a200{
+    color: #B2FF59 !important;
+  }
+  &A200{
+    color: #B2FF59 !important;
+  }
+  &a400{
+    color: #76FF03 !important;
+  }
+  &A400{
+    color: #76FF03 !important;
+  }
+  &a700{
+    color: #64DD17 !important;
+  }
+  &A700{
+    color: #64DD17 !important;
+  }
+}
+.lightgreenText{
+  @extend .lightGreen;
+}
+//Lime
+.limeText{
+  color: #CDDC39 !important;
+  &50{
+    color: #F9FBE7 !important;
+  }
+  &100{
+    color: #F0F4C3 !important;
+  }
+  &200{
+    color: #E6EE9C !important;
+  }
+  &300{
+    color: #DCE775 !important;
+  }
+  &400{
+    color: #D4E157 !important;
+  }
+  &500{
+    color: #CDDC39 !important;
+  }
+  &600{
+    color: #C0CA33 !important;
+  }
+  &700{
+    color: #AFB42B !important;
+  }
+  &800{
+    color: #9E9D24 !important;
+  }
+  &900{
+    color: #827717 !important;
+  }
+  &a100{
+    color: #F4FF81 !important;
+  }
+  &A100{
+    color: #F4FF81 !important;
+  }
+  &a200{
+    color: #EEFF41 !important;
+  }
+  &A200{
+    color: #EEFF41 !important;
+  }
+  &a400{
+    color: #C6FF00 !important;
+  }
+  &A400{
+    color: #C6FF00 !important;
+  }
+  &a700{
+    color: #AEEA00 !important;
+  }
+  &A700{
+    color: #AEEA00 !important;
+  }
+}
+//Yellow
+.yellowText{
+  color: #FFEB3B !important;
+  &50{
+    color: #FFFDE7 !important;
+  }
+  &100{
+    color: #FFF9C4 !important;
+  }
+  &200{
+    color: #FFF59D !important;
+  }
+  &300{
+    color: #FFF176 !important;
+  }
+  &400{
+    color: #FFEE58 !important;
+  }
+  &500{
+    color: #FFEB3B !important;
+  }
+  &600{
+    color: #FDD835 !important;
+  }
+  &700{
+    color: #FBC02D !important;
+  }
+  &800{
+    color: #F9A825 !important;
+  }
+  &900{
+    color: #F57F17 !important;
+  }
+  &a100{
+    color: #FFFF8D !important;
+  }
+  &A100{
+    color: #FFFF8D !important;
+  }
+  &a200{
+    color: #FFFF00 !important;
+  }
+  &A200{
+    color: #FFFF00 !important;
+  }
+  &a400{
+    color: #FFEA00 !important;
+  }
+  &A400{
+    color: #FFEA00 !important;
+  }
+  &a700{
+    color: #FFD600 !important;
+  }
+  &A700{
+    color: #FFD600 !important;
+  }
+}
+//Amber
+.amberText{
+  color: #FFC107 !important;
+  &50{
+    color: #FFF8E1 !important;
+  }
+  &100{
+    color: #FFECB3 !important;
+  }
+  &200{
+    color: #FFE082 !important;
+  }
+  &300{
+    color: #FFD54F !important;
+  }
+  &400{
+    color: #FFCA28 !important;
+  }
+  &500{
+    color: #FFC107 !important;
+  }
+  &600{
+    color: #FFB300 !important;
+  }
+  &700{
+    color: #FFA000 !important;
+  }
+  &800{
+    color: #FF8F00 !important;
+  }
+  &900{
+    color: #FF6F00 !important;
+  }
+  &a100{
+    color: #FFE57F !important;
+  }
+  &A100{
+    color: #FFE57F !important;
+  }
+  &a200{
+    color: #FFD740 !important;
+  }
+  &A200{
+    color: #FFD740 !important;
+  }
+  &a400{
+    color: #FFC400 !important;
+  }
+  &A400{
+    color: #FFC400 !important;
+  }
+  &a700{
+    color: #FFAB00 !important;
+  }
+  &A700{
+    color: #FFAB00 !important;
+  }
+}
+//Orange
+.orangeText{
+  color: #FF9800 !important;
+  &50{
+    color: #FFF3E0 !important;
+  }
+  &100{
+    color: #FFE0B2 !important;
+  }
+  &200{
+    color: #FFCC80 !important;
+  }
+  &300{
+    color: #FFB74D !important;
+  }
+  &400{
+    color: #FFA726 !important;
+  }
+  &500{
+    color: #FF9800 !important;
+  }
+  &600{
+    color: #FB8C00 !important;
+  }
+  &700{
+    color: #F57C00 !important;
+  }
+  &800{
+    color: #EF6C00 !important;
+  }
+  &900{
+    color: #E65100 !important;
+  }
+  &a100{
+    color: #FFD180 !important;
+  }
+  &A100{
+    color: #FFD180 !important;
+  }
+  &a200{
+    color: #FFAB40 !important;
+  }
+  &A200{
+    color: #FFAB40 !important;
+  }
+  &a400{
+    color: #FF9100 !important;
+  }
+  &A400{
+    color: #FF9100 !important;
+  }
+  &a700{
+    color: #FF6D00 !important;
+  }
+  &A700{
+    color: #FF6D00 !important;
+  }
+}
+//Deep Orange
+.deepOrangeText{
+  color: #FF5722 !important;
+  &50{
+    color: #FBE9E7 !important;
+  }
+  &100{
+    color: #FFCCBC !important;
+  }
+  &200{
+    color: #FFAB91 !important;
+  }
+  &300{
+    color: #FF8A65 !important;
+  }
+  &400{
+    color: #FF7043 !important;
+  }
+  &500{
+    color: #FF5722 !important;
+  }
+  &600{
+    color: #F4511E !important;
+  }
+  &700{
+    color: #E64A19 !important;
+  }
+  &800{
+    color: #D84315 !important;
+  }
+  &900{
+    color: #BF360C !important;
+  }
+  &a100{
+    color: #FF9E80 !important;
+  }
+  &A100{
+    color: #FF9E80 !important;
+  }
+  &a200{
+    color: #FF6E40 !important;
+  }
+  &A200{
+    color: #FF6E40 !important;
+  }
+  &a400{
+    color: #FF3D00 !important;
+  }
+  &A400{
+    color: #FF3D00 !important;
+  }
+  &a700{
+    color: #DD2C00 !important;
+  }
+  &A700{
+    color: #DD2C00 !important;
+  }
+}
+.deeporangeText{
+  @extend .deepOrange
+}
+//Brown
+.brownText{
+  color: #795548 !important;
+  &50{
+    color: #EFEBE9 !important;
+  }
+  &100{
+    color: #D7CCC8 !important;
+  }
+  &200{
+    color: #BCAAA4 !important;
+  }
+  &300{
+    color: #A1887F !important;
+  }
+  &400{
+    color: #8D6E63 !important;
+  }
+  &500{
+    color: #795548 !important;
+  }
+  &600{
+    color: #6D4C41 !important;
+  }
+  &700{
+    color: #5D4037 !important;
+  }
+  &800{
+    color: #4E342E !important;
+  }
+  &900{
+    color: #3E2723 !important;
+  }
+}
+//Grey
+.greyText{
+  color: #9E9E9E !important;
+  &50{
+    color: #FAFAFA !important;
+  }
+  &100{
+    color: #F5F5F5 !important;
+  }
+  &200{
+    color: #EEEEEE !important;
+  }
+  &300{
+    color: #E0E0E0 !important;
+  }
+  &400{
+    color: #BDBDBD !important;
+  }
+  &500{
+    color: #9E9E9E !important;
+  }
+  &600{
+    color: #757575 !important;
+  }
+  &700{
+    color: #616161 !important;
+  }
+  &800{
+    color: #424242 !important;
+  }
+  &900{
+    color: #212121 !important;
+  }
+}
+.grayText{
+  @extend .grey;
+}
+//Blue grey
+.blueGreyText{
+  color: #607D8B !important;
+  &50{
+    color: #ECEFF1 !important;
+  }
+  &100{
+    color: #CFD8DC !important;
+  }
+  &200{
+    color: #B0BEC5 !important;
+  }
+  &300{
+    color: #90A4AE !important;
+  }
+  &400{
+    color: #78909C !important;
+  }
+  &500{
+    color: #607D8B !important;
+  }
+  &600{
+    color: #546E7A !important;
+  }
+  &700{
+    color: #455A64 !important;
+  }
+  &800{
+    color: #37474F !important;
+  }
+  &900{
+    color: #263238 !important;
+  }
+}
+.bluegreyText{
+  @extend .blueGrey;
+}
+.bluegrayText{
+  @extend .bluegrey;
+}
+.blueGrayText{
+  @extend .bluegrey;
+}
+.blackText{
+  color: #000000 !important;
+}
+.whiteText{
+  color: #ffffff !important;
 }

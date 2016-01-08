@@ -5,7 +5,7 @@
   display: inline-block;
   float: left;
   transition: transform 0.5s, box-shadow 1s;
-  z-index: 510;
+  z-index: 2000;
   position: fixed;
   overflow-y: auto;
   .header {
@@ -13,7 +13,7 @@
     background: $primaryColour;
     .user {
       padding-top: 90px;
-      padding-left: 26px;
+      padding-left: 20px;
       padding-right: 26px;
       .avatar {
         height: 70px;
@@ -90,7 +90,7 @@
     transform: translateX(-105%);
     width: calc(100vw - 56px);
     max-width: 320px;
-    z-index: 510;
+    z-index: 2000;
     position: fixed;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
     &.draweropen {
@@ -105,7 +105,7 @@
     width: 100vw;
     background: black;
     position: fixed;
-    z-index: 498;
+    z-index: 1001;
     opacity: 0.0;
     margin-left: -100vw;
     cursor: pointer;
@@ -124,7 +124,7 @@
     width: calc(100vw - 56px) !important;
     max-width: 320px;
     transform: translateX(-105%);
-    z-index: 500;
+    z-index: 2000;
     position: fixed !important;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
     &.draweropen {
@@ -139,7 +139,7 @@
     width: 100vw;
     background: black;
     position: fixed;
-    z-index: 498;
+    z-index: 1001;
     opacity: 0.0;
     margin-left: -100vw;
     cursor: pointer;

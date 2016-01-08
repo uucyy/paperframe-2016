@@ -1,8 +1,11 @@
+<!--TODO
+  Write documentation for colour usage in HTML
+-->
 <!DOCTYPE html>
 <html id="paperframe">
 
 <head>
-  <title>Tooltips - PaperFrame</title>
+  <title>PaperFrame</title>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="../paperframe/paperframe.min.css">
   <script src="../paperframe/paperframe.min.js"></script>
@@ -24,7 +27,7 @@
 </head>
 
 <body>
-  <div id="drawer" style="overflow-y: auto;">
+  <div id="drawer">
     <div class="header">
       <div class="user">
         <div class="avatar"></div>
@@ -66,7 +69,7 @@
         </li>
       </a>
       <a href="tooltips.html">
-        <li active>
+        <li>
           <i class="material-icons">assistant</i>
           <span>Tooltips</span>
         </li>
@@ -109,34 +112,61 @@
   <div id="main" class="sticky">
     <div id="toolbar" class="sticky tall">
       <i class="material-icons" id="hamburger" onclick="toggleDrawer()">menu</i>
-      <div id="title">Tooltips</div>
+      <div id="title">Snackbars and toasts</div>
     </div>
     <div class="container">
       <div class="small-12 large-12 columns">
         <div class="card">
           <div class="primarytitle">
-            <h1>Tooltips</h1>
-            <h2>An introduction to tooltips</h2>
+            <h1>Snackbars</h1>
+            <h2>An introduction to snackbars</h2>
           </div>
           <div class="supportingtext">
-            <p>Tooltips are labels that appear on hover and focus when the user hovers over an element with the cursor or upon touch (without releasing) in a touch UI. They contain textual identification for the element in question. They may also contain brief helper text regarding the function of the element. The label itself cannot receive input focus.</p>
+            <p>
+              Snackbars provide lightweight feedback about an operation by showing a brief message at the bottom of the screen. Snackbars can contain an action.
+            </p>
+            <p>
+              The snackbar action will use the secondary colour defined in your SCSS colours file, located in /scss/import/colours.scss
+            </p>
+          </div>
+          <div class="actions">
+            <hr>
+            <button flat onclick="toggleToast()">toast</button>
+            <button flat onclick="toggleSnackbar()">Snackbar</button>
           </div>
         </div>
         <div class="card">
           <div class="primarytitle">
             <h1>Code</h1>
-            <br>
-            <div class="tooltip">Hover over for tooltip</div>
-            <div class="tip">Tooltip</div>
           </div>
-          <pre>
-            <code class="html">
-&lt;div class="tooltip">Hover over for tooltip&lt;/div>
-&lt;div class="tip">Tooltip&lt;/div>
-            </code>
-          </pre>
+          <div class="supportingtext">
+            <h2>HTML</h2>
+            <pre>
+              <code class="html">
+&lt;div id="snackbar" class="hidden">
+  &lt;div class="content">
+    This is a snackbar
+    &lt;div class="actions">
+      &lt;button flat>action&lt;/button>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+          </div>
+        </div>
+    </div>
+  </div>
+    <div id="snackbar" class="hidden">
+      <div class="content">
+        This is a snackbar
+        <div class="action">
+          <button flat>action</button>
         </div>
       </div>
+    </div>
+    <div id="toast">
+      This is a toast
     </div>
 </body>
 
