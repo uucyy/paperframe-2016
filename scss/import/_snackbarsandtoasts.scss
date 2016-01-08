@@ -45,7 +45,7 @@
   text-align: center;
   position: fixed;
   bottom: 36px;
-  margin-left: 56px;
+  margin-left: 350px;
   padding: 0 24px;
   line-height: 48px;
   color: rgba(255,255,255,.9);
@@ -70,5 +70,10 @@
     &.snackbarup{
       bottom: 64px;
     }
+  }
+}
+@media #{$medium-only} {
+  #toast{
+    margin-left: 10px;
   }
 }
