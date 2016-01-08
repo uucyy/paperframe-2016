@@ -1,10 +1,10 @@
 @import "import/import";
-@import "index";
 // HACK: Potential performance improvements
 * {
   -webkit-overflow-scrolling: touch;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  text-overflow: ellipsis;
 }
 html,
 body {
