@@ -1,3 +1,6 @@
+<!--TODO
+  Write documentation for colour usage in HTML
+-->
 <!DOCTYPE html>
 <html id="paperframe">
 
@@ -33,7 +36,7 @@
       </div>
     </div>
     <ul>
-      <a href="demo/index.html">
+      <a href="index.html">
         <li active>
           <i class="material-icons">home</i>
           <span>Welcome</span>
@@ -83,6 +86,12 @@
           <span>Colour</span>
         </li>
       </a>
+      <a href="demo/snackbarsandtoasts.html">
+        <li>
+          <i class="material-icons">perm_device_information</i>
+          <span>Snackbars and toasts</span>
+        </li>
+      </a>
       <hr>
       <h2>Resources</h2>
       <a href="https://www.google.com/design/spec/material-design/introduction.html">
@@ -119,11 +128,13 @@
           <p>
             This framework is made with the material design guidelines not only as guidelines, but as rules. These pages serve as demo, documentation and instruction pages
           </p>
+          <p>There is currently no download for either version of Paperframe. If you wish to contribute or use Paperframe early, visit the Paperframe repo over on Github</p>
           </div>
           <div class="actions">
             <hr>
-            <button flat>download scss</button>
-            <button flat>download css</button>
+            <button flat onclick="toggleToast()">download</button>
+            <!--<button flat>download scss</button>
+            <button flat>download css</button>-->
           </div>
         </div>
         <div class="card">
@@ -167,10 +178,18 @@
             <h2>Visit the Paperframe repository over on Github</h2>
             <a href="https://github.com/iKermitKiller/paperframe-2016">https://github.com/iKermitKiller/paperframe-2016</a>
           </div>
-          </div>
         </div>
       </div>
     </div>
+    <div id="snackbar" class="hidden">
+      <div class="content">
+        This is a snackbar
+        <div class="action">
+          <button flat onclick="toggleSnackbar()">undo</button>
+      </div>
+      </div>
+    </div>
+    <div id="toast">Download started</div>
 </body>
 
 </html>
