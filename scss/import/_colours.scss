@@ -421,6 +421,64 @@ $divider: lighten($base, 88%);
 .lightblue{
   @extend .lightBlue;
 }
+//Cyan
+.cyan{
+  background: #00BCD4 !important;
+  &50{
+    background: #E0F7FA !important;
+  }
+  &100{
+    background: #B2EBF2 !important;
+  }
+  &200{
+    background: #80DEEA !important;
+  }
+  &300{
+    background: #4DD0E1 !important;
+  }
+  &400{
+    background: #26C6DA !important;
+  }
+  &500{
+    background: #00BCD4 !important;
+  }
+  &600{
+    background: #00ACC1 !important;
+  }
+  &700{
+    background: #0097A7 !important;
+  }
+  &800{
+    background: #00838F !important;
+  }
+  &900{
+    background: #006064 !important;
+  }
+  &a100{
+    background: #84FFFF !important;
+  }
+  &A100{
+    background: #84FFFF !important;
+  }
+  &a200{
+    background: #18FFFF !important;
+  }
+  &A200{
+    background: #18FFFF !important;
+  }
+  &a400{
+    background: #00E5FF !important;
+  }
+  &A400{
+    background: #00E5FF !important;
+  }
+  &a700{
+    background: #00B8D4 !important;
+  }
+  &A700{
+    background: #00B8D4 !important;
+  }
+}
 //Teal
 .teal{
   background: #009688 !important;
