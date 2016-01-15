@@ -105,14 +105,13 @@
     width: 100vw;
     background: black;
     position: fixed;
-    z-index: 1001;
+    z-index: -99;
     opacity: 0.0;
-    margin-left: -100vw;
     cursor: pointer;
+    transition: opacity 0.8s;
     &.draweropen {
       opacity: 0.4;
-      margin-left: 0;
-      transition: opacity 0.8s;
+      z-index: 1001;
     }
     &.fixscroll {
       height: 100vh;
@@ -139,14 +138,13 @@
     width: 100vw;
     background: black;
     position: fixed;
-    z-index: 1001;
+    z-index: -99;
     opacity: 0.0;
-    margin-left: -100vw;
     cursor: pointer;
+    transition: opacity 0.8s;
     &.draweropen {
       opacity: 0.4;
-      margin-left: 0;
-      transition: opacity 0.8s;
+      z-index: 1001;
     }
   }
 }
