@@ -11,6 +11,7 @@ button {
   cursor: pointer;
   border-radius: 3px;
   background: $primaryColour;
+  -webkit-transition: background 0.4s;
   transition: background 0.4s;
   display: inline-block;
   &:active {
@@ -19,6 +20,7 @@ button {
   &[raised] {
     color: white;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    -webkit-transition: box-shadow 0.3s;
     transition: box-shadow 0.3s;
     &:active {
       box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
@@ -44,12 +46,16 @@ input[type=submit] {
   bottom: 24px;
   right: 24px;
   z-index: 497;
+  -webkit-transition: margin-bottom ease-in-out 0.3s, box-shadow 0.7s, -webkit-transform 0.7s;
+  transition: margin-bottom ease-in-out 0.3s, box-shadow 0.7s, -webkit-transform 0.7s;
   transition: margin-bottom ease-in-out 0.3s, box-shadow 0.7s, transform 0.7s;
+  transition: margin-bottom ease-in-out 0.3s, box-shadow 0.7s, transform 0.7s, -webkit-transform 0.7s;
   margin-bottom: 0;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
   color: white;
   cursor: pointer;
-  transform: translate3d(0);
+  -webkit-transform: translate3d(0);
+          transform: translate3d(0);
   i {
     width: 64px;
     text-align: center;
@@ -74,6 +80,7 @@ input[type=submit] {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
   color: white;
   background: #424242;
+  -webkit-transition: box-shadow 0.7s;
   transition: box-shadow 0.7s;
   &:active {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
@@ -98,6 +105,7 @@ input[type=submit] {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
   color: white;
   background: #424242;
+  -webkit-transition: box-shadow 0.7s;
   transition: box-shadow 0.7s;
   cursor: pointer;
   &:active {
@@ -151,6 +159,7 @@ input[type=text]{
   border-bottom-color: #c9c9c9;
   border-bottom-width: 2px;
   border-bottom-style: solid;
+  -webkit-transition: border-bottom-color .3s;
   transition: border-bottom-color .3s;
   display: block;
   position: relative;
@@ -172,6 +181,7 @@ input[type=text]{
     position: absolute;
     z-index: 9;
     opacity: .7;
+    -webkit-transition: margin-top .4s, font-size .4s, color .4s, opacity .4s;
     transition: margin-top .4s, font-size .4s, color .4s, opacity .4s;
     &.float{
       margin-top: -55px;
@@ -186,6 +196,7 @@ textarea{
   border-bottom-color: #c9c9c9;
   border-bottom-width: 2px;
   border-bottom-style: solid;
+  -webkit-transition: border-bottom-color .3s;
   transition: border-bottom-color .3s;
   display: block;
   position: relative;
@@ -207,6 +218,7 @@ textarea{
     position: absolute;
     z-index: 9;
     opacity: .7;
+    -webkit-transition: margin-top .4s, font-size .4s, color .4s, opacity .4s;
     transition: margin-top .4s, font-size .4s, color .4s, opacity .4s;
     &.float{
       margin-top: -55px;
@@ -216,7 +228,7 @@ textarea{
     }
   }
 }
-//Mixins
+/*Mixins*/
 
 @mixin button{
   @extend button;

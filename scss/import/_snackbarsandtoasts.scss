@@ -7,8 +7,12 @@
   bottom: 0;
   z-index: 500;
   color: rgba(255,255,255,.9);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transform: translateY(0%);
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -33,7 +37,8 @@
     }
   }
   &.hidden {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
 }
 #toast {
@@ -49,12 +54,17 @@
   padding: 0 24px;
   line-height: 48px;
   color: rgba(255,255,255,.9);
-  transform: translateY(220%);
+  -webkit-transform: translateY(220%);
+          transform: translateY(220%);
+  -webkit-transition: opacity .25s, bottom .4s, -webkit-transform 0.25s;
+  transition: opacity .25s, bottom .4s, -webkit-transform 0.25s;
   transition: transform 0.25s, opacity .25s, bottom .4s;
+  transition: transform 0.25s, opacity .25s, bottom .4s, -webkit-transform 0.25s;
   z-index: 500;
   opacity: .0;
   &.show {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }

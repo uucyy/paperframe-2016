@@ -4,7 +4,10 @@
   height: 100vh;
   display: inline-block;
   float: left;
+  -webkit-transition: box-shadow 1s, -webkit-transform 0.5s;
+  transition: box-shadow 1s, -webkit-transform 0.5s;
   transition: transform 0.5s, box-shadow 1s;
+  transition: transform 0.5s, box-shadow 1s, -webkit-transform 0.5s;
   z-index: 2000;
   position: fixed;
   overflow-y: auto;
@@ -39,6 +42,7 @@
         font-weight: 300;
         opacity: 0.8;
         margin-top: 40px;
+        font-size: .8em;
       }
     }
   }
@@ -52,7 +56,11 @@
     li {
       line-height: 46px;
       padding-left: 16px;
+      -webkit-transition: background .25s;
       transition: background .25s;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 100px;
       &:hover{
         background: rgba(0,0,0,.1);
       }
@@ -87,18 +95,21 @@
 }
 @media #{$small-only} {
   #drawer {
-    transform: translateX(-105%);
+    -webkit-transform: translateX(-105%);
+            transform: translateX(-105%);
     width: calc(100vw - 56px);
     max-width: 320px;
     z-index: 2000;
     position: fixed;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
     &.draweropen {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
   }
   #main {
-    width: 100vw !important;
+    width: 100% !important;
+    float: initial;
   }
   #scrim {
     height: 100vh;
@@ -108,6 +119,7 @@
     z-index: -99;
     opacity: 0.0;
     cursor: pointer;
+    -webkit-transition: opacity 0.8s;
     transition: opacity 0.8s;
     &.draweropen {
       opacity: 0.4;
@@ -122,16 +134,19 @@
   #drawer {
     width: calc(100vw - 56px) !important;
     max-width: 320px;
-    transform: translateX(-105%);
+    -webkit-transform: translateX(-105%);
+            transform: translateX(-105%);
     z-index: 2000;
     position: fixed !important;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
     &.draweropen {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
   }
   #main {
-    width: 100vw !important;
+    width: 100% !important;
+    float: initial;
   }
   #scrim {
     height: 100vh;
@@ -141,6 +156,7 @@
     z-index: -99;
     opacity: 0.0;
     cursor: pointer;
+    -webkit-transition: opacity 0.8s;
     transition: opacity 0.8s;
     &.draweropen {
       opacity: 0.4;
